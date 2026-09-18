@@ -174,18 +174,6 @@ const SEARCH_DATA = [
     url: 'informasi.html#pengumuman'
   },
   {
-    title: 'Transparansi Anggaran Pendapatan & Belanja RT/Daerah',
-    category: 'Informasi',
-    badgeClass: 'badge-informasi',
-    icon: 'fas fa-file-invoice-dollar',
-    iconBg: '#e0f2fe',
-    iconColor: '#0369a1',
-    date: 'Tahun Anggaran 2026',
-    snippet: 'Laporan terbuka kas keuangan, iuran warga, dan realisasi alokasi belanja fasilitas serta pembangunan lingkungan.',
-    keywords: 'transparansi anggaran apbd kas iuran keuangan laporan bendahara terbuka',
-    url: 'informasi.html#transparansi'
-  },
-  {
     title: 'Pendaftaran Beasiswa Berprestasi S1 & Diploma',
     category: 'Informasi',
     badgeClass: 'badge-informasi',
