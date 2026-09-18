@@ -1,65 +1,65 @@
 // ===== SEARCH DATASET =====
 const SEARCH_DATA = [
-  // Berita
+  // Kegiatan Warga
   {
     title: 'Lomba Volly Antar Dawis Tahun 2025',
-    category: 'Berita',
-    badgeClass: 'badge-berita',
+    category: 'Kegiatan',
+    badgeClass: 'badge-agenda',
     icon: 'fas fa-volleyball-ball',
     iconBg: '#e0f2fe',
     iconColor: '#0284c7',
     date: '27 Juli 2025',
     snippet: 'Lomba volly antar dawis acara 17 Agustusan bersama warga RT 03/RW 01 Kelurahan Kramas dan dimenangkan oleh dawis brokoli.',
-    keywords: 'volly bola voli dawis brokoli 17 agustus lomba olahraga wanita',
-    url: 'berita.html'
+    keywords: 'volly bola voli dawis brokoli 17 agustus lomba olahraga wanita kegiatan',
+    url: 'kegiatan-warga.html'
   },
   {
     title: 'Karnaval Peringatan Hari Kemerdekaan RI Tahun 2025',
-    category: 'Berita',
-    badgeClass: 'badge-berita',
+    category: 'Kegiatan',
+    badgeClass: 'badge-agenda',
     icon: 'fas fa-flag',
     iconBg: '#fee2e2',
     iconColor: '#dc2626',
     date: '10 Agustus 2025',
     snippet: 'Karnaval memeringati 17 Agustus bertema kemerdekaan dengan pakaian adat nusantara dan parade kreasi seni warga RT 03/RW 01.',
-    keywords: 'karnaval pawai kemerdekaan baju adat kreasi seni 17 agustus budaya kostum',
-    url: 'berita.html'
+    keywords: 'karnaval pawai kemerdekaan baju adat kreasi seni 17 agustus budaya kostum kegiatan',
+    url: 'kegiatan-warga.html'
   },
   {
     title: 'Acara Jalan Sehat & Peresmian RT Baru 2025',
-    category: 'Berita',
-    badgeClass: 'badge-berita',
+    category: 'Kegiatan',
+    badgeClass: 'badge-agenda',
     icon: 'fas fa-walking',
     iconBg: '#ecfdf5',
     iconColor: '#059669',
     date: '28 Desember 2025',
     snippet: 'Acara jalan sehat santai warga dibarengi serah terima jabatan Bapak RT baru periode 2026-2031 penuh keakraban.',
-    keywords: 'jalan sehat sertijab serah terima jabatan peresmian ketua rt guyub rukun olahraga',
-    url: 'berita.html'
+    keywords: 'jalan sehat sertijab serah terima jabatan peresmian ketua rt guyub rukun olahraga kegiatan',
+    url: 'kegiatan-warga.html'
   },
   {
     title: 'Musyawarah & Pemilihan Ketua RT 03/RW 01 Periode 2026-2031',
-    category: 'Berita',
-    badgeClass: 'badge-berita',
+    category: 'Kegiatan',
+    badgeClass: 'badge-agenda',
     icon: 'fas fa-vote-yea',
     iconBg: '#ede9fe',
     iconColor: '#7c3aed',
     date: '15 Januari 2026',
     snippet: 'Kegiatan musyawarah pemilihan ketua RT baru bersama seluruh warga RT 03/RW 01 Kramas yang berlangsung demokratis, guyub, dan tertib.',
-    keywords: 'pemilihan rt musyawarah voting ketua rukun tetangga demokrasi kramas slamet riyanto',
-    url: 'berita.html'
+    keywords: 'pemilihan rt musyawarah voting ketua rukun tetangga demokrasi kramas slamet riyanto kegiatan',
+    url: 'kegiatan-warga.html'
   },
   {
     title: 'Pawai Kreasi & Pesta Seni Budaya Warga',
-    category: 'Berita',
-    badgeClass: 'badge-berita',
+    category: 'Kegiatan',
+    badgeClass: 'badge-agenda',
     icon: 'fas fa-theater-masks',
     iconBg: '#fef3c7',
     iconColor: '#d97706',
     date: 'Tahun 2025',
     snippet: 'Partisipasi antusias warga menampilkan ragam busana adat tradisional dan kreasi kebudayaan nusantara.',
-    keywords: 'seni budaya adat pawai musik tari pertunjukan kreativitas warga kramas',
-    url: 'berita.html'
+    keywords: 'seni budaya adat pawai musik tari pertunjukan kreativitas warga kramas kegiatan',
+    url: 'kegiatan-warga.html'
   },
 
   // Agenda Kegiatan
