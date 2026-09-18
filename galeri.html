@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto &amp; Video RT 03/RW 01 Kelurahan Kramas</title>
+  <meta name="description"
+    content="Dokumentasi visual foto dan video kegiatan masyarakat serta pembangunan kota Pemerintah Daerah Warga Tiga Satu.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-progress" id="navbarProgress"></div>
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-wrapper">
+          <img src="images/logo.jpg" alt="Logo REGATU RT 03 RW 01" class="logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">RT 03/RW 01 Kramas</span>
+          <span class="brand-tagline"><span class="status-pulse"></span> Melayani &amp; Membangun</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-menu-header">
+          <span class="brand-title">Menu Navigasi</span>
+          <button class="nav-menu-close" id="navMenuClose" aria-label="Tutup menu"><i class="fas fa-times"></i></button>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"><i class="fas fa-home nav-icon"></i> <span>BERANDA</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="profil.html" class="nav-link"><i class="fas fa-landmark nav-icon"></i> <span>PROFIL</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="kegiatan-warga.html" class="nav-link"><i class="fas fa-calendar-alt nav-icon"></i> <span>KEGIATAN WARGA</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="informasi.html" class="nav-link"><i class="fas fa-info-circle nav-icon"></i> <span>INFORMASI</span> <i class="fas fa-chevron-down arrow"></i></a>
+          <div class="dropdown-menu">
+            <a href="informasi.html#pengumuman">
+              <div class="dropdown-icon"><i class="fas fa-bullhorn"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Pengumuman</span>
+                <span class="dropdown-desc">Informasi &amp; edaran resmi RT</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="informasi.html#transparansi">
+              <div class="dropdown-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Transparansi Anggaran</span>
+                <span class="dropdown-desc">Laporan kas dan dana warga</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="informasi.html#lowongan">
+              <div class="dropdown-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Lowongan Kerja</span>
+                <span class="dropdown-desc">Peluang karir &amp; mitra kerja</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="kegiatan-warga.html">
+              <div class="dropdown-icon"><i class="fas fa-calendar-check"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Agenda Kegiatan</span>
+                <span class="dropdown-desc">Jadwal kegiatan lingkungan</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="galeri.html" class="nav-link active"><i class="fas fa-images nav-icon"></i> <span>GALERI</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="kontak.html" class="nav-link"><i class="fas fa-envelope nav-icon"></i> <span>KONTAK</span></a>
+        </li>
+        <li class="mobile-drawer-cta">
+          <a href="kontak.html" class="navbar-cta-btn"><i class="fas fa-paper-plane"></i> <span>Layanan Warga</span></a>
+        </li>
+      </ul>
+
+      <div class="navbar-actions">
+        <button class="navbar-search-btn btn-search" aria-label="Cari Informasi" title="Cari Informasi">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="kontak.html" class="navbar-cta-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span>Layanan Warga</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <div class="nav-toggle-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <header class="page-banner">
+    <div class="container">
+      <div class="page-banner-content">
+        <h1>Galeri Dokumentasi</h1>
+        <p>Potret kebersamaan masyarakat, pesona kebudayaan, dan denyut kemajuan pembangunan di daerah RT 03/RW 01
+          Kelurahan Kramas.
+        </p>
+        <div class="breadcrumb">
+          <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+          <i class="fas fa-chevron-right" style="font-size:10px;"></i>
+          <span class="current">Galeri</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="section">
+    <div class="container">
+
+      <!-- Filter Kategori Galeri -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua Album</button>
+        <button class="filter-btn" data-filter="kegiatan-warga">Kegiatan Warga</button>
+        <button class="filter-btn" data-filter="pilah-sampah">Pilah Sampah</button>
+        <button class="filter-btn" data-filter="pentas-seni">Pentas Seni</button>
+        <button class="filter-btn" data-filter="lomba">Lomba-Lomba</button>
+        <button class="filter-btn" data-filter="jalan-sehat">Jalan Sehat</button>
+      </div>
+
+      <!-- Gallery Grid (6 Foto per Kategori Button) -->
+      <div class="gallery-grid">
+        <!-- ================= KATEGORI: KEGIATAN WARGA (6 FOTO) ================= -->
+        <div class="gallery-card" data-category="kegiatan-warga">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/pilrt"
+              alt="Musyawarah Pemilihan Ketua RT 03 RW 01" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Kegiatan Warga</span>
+            <h4>Musyawarah Pemilihan Ketua RT 03 Kramas.</h4>
+            <span><i class="far fa-calendar-alt"></i> 1 Desember 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="kegiatan-warga">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/kegiatanwarga6"
+              alt="Karnaval Budaya & Kebersamaan Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Kegiatan Warga</span>
+            <h4>Kegiatan rutin perawatan pompa air PAMSIMAS di RT 03 RW 01.</h4>
+            <span><i class="far fa-calendar-alt"></i> 25 September 2023</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="kegiatan-warga">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/kegiatanwarga5"
+              alt="Pawai Kreasi Budaya Dawis Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Kegiatan Warga</span>
+            <h4>Kegiatan rutin perawatan pompa air PAMSIMAS di RT 03 RW 01.</h4>
+            <span><i class="far fa-calendar-alt"></i> 25 September 2023</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="kegiatan-warga">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/kegiatanwarga4" alt="Kerja Bakti"
+              loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Kegiatan Warga</span>
+            <h4>kerja sama pembuatan lapangan untuk kegiatan lomba 17 Agustus</h4>
+            <span><i class="far fa-calendar-alt"></i> 08 Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="kegiatan-warga">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/kegiatanwarga2"
+              alt="Layanan Cek Kesehatan di Pospindu" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Kegiatan Warga</span>
+            <h4>Layanan Cek Kesehatan Lansia &amp; Balita</h4>
+            <span><i class="far fa-calendar-alt"></i> Maret 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="kegiatan-warga">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/kegiatanwarga1"
+              alt="Gotong Royong Pembuatan Taman TOGA" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Kegiatan Warga</span>
+            <h4>Gotong Royong Pembuatan Taman TOGA</h4>
+            <span><i class="far fa-calendar-alt"></i> Januari 2026</span>
+          </div>
+        </div>
+
+        <!-- ================= KATEGORI: PILAH SAMPAH (6 FOTO) ================= -->
+        <div class="gallery-card" data-category="pilah-sampah">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/pilahsampah1"
+              alt="Edukasi Pemilahan Sampah Rumah Tangga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pilah Sampah</span>
+            <h4>Edukasi Pemilahan Sampah Rumah Tangga</h4>
+            <span><i class="far fa-calendar-alt"></i> Januari 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pilah-sampah">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/pilahsampah2"
+              alt="Penimbangan Sampah Anorganik Dawis Kramas" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pilah Sampah</span>
+            <h4>Penimbangan Sampah Anorganik Dawis</h4>
+            <span><i class="far fa-calendar-alt"></i> Februari 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pilah-sampah">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/pilahsampah3"
+              alt="Pengumpulan Plastik dan Kardus Bekas" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pilah Sampah</span>
+            <h4>Pengumpulan Plastik &amp; Kardus Bekas</h4>
+            <span><i class="far fa-calendar-alt"></i> Februari 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pilah-sampah">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/pilahsampah4"
+              alt="Kreasi Produk Kerajinan Daur Ulang" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pilah Sampah</span>
+            <h4>Kreasi Produk Kerajinan Bahan Daur Ulang</h4>
+            <span><i class="far fa-calendar-alt"></i> Maret 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pilah-sampah">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1584473457406-6240486418e9?auto=format&fit=crop&w=800&q=80"
+              alt="Pembuatan Pupuk Kompos Alami Dawis" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pilah Sampah</span>
+            <h4>Pembuatan Pupuk Kompos Alami Dawis</h4>
+            <span><i class="far fa-calendar-alt"></i> Februari 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pilah-sampah">
+          <div class="gallery-thumb">
+            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80"
+              alt="Penyaluran Sampah Pilah Bersama Mitra" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pilah Sampah</span>
+            <h4>Penyaluran Sampah Pilah Bersama Bank Sampah</h4>
+            <span><i class="far fa-calendar-alt"></i> Maret 2026</span>
+          </div>
+        </div>
+
+        <!-- ================= KATEGORI: PENTAS SENI (6 FOTO) ================= -->
+        <div class="gallery-card" data-category="pentas-seni">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/pembuatanpanggung?updatedAt=1789309327818"
+              alt="Panggung Puncak Pentas Seni & Musik Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pentas Seni</span>
+            <h4>Panggung Puncak Pentas Seni &amp; Musik Warga</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pentas-seni">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/galeripentas2?updatedAt=1789314953715"
+              alt="Tari Tradisional Kreasi Anak Dawis RT 03" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pentas Seni</span>
+            <h4>Tari Tradisional Kreasi Anak Dawis RT 03</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pentas-seni">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/galeripentas3?updatedAt=1789314953354"
+              alt="Penampilan Musik Akustik Remaja Karang Taruna" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pentas Seni</span>
+            <h4>Penampilan Musik Akustik Remaja Kramas</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pentas-seni">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/galeripentas4?updatedAt=1789314953343"
+              alt="Pagelaran Seni Drama Komedi Guyub Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pentas Seni</span>
+            <h4>Pagelaran Seni Drama Komedi Guyub Warga</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pentas-seni">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/galeripentas5?updatedAt=1789314953704"
+              alt="Paduan Suara & Lagu Nusantara Ibu Dawis" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pentas Seni</span>
+            <h4>Paduan Suara &amp; Lagu Nusantara Ibu Dawis</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="pentas-seni">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/galeripentas1?updatedAt=1789314953368"
+              alt="Malam Tirakatan & Puncak Pesta Kesenian Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Pentas Seni</span>
+            <h4>Malam Tirakatan &amp; Puncak Pesta Rakyat</h4>
+            <span><i class="far fa-calendar-alt"></i> 16 Agustus 2025</span>
+          </div>
+        </div>
+
+        <!-- ================= KATEGORI: LOMBA-LOMBA (6 FOTO) ================= -->
+        <div class="gallery-card" data-category="lomba">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/27juli2025"
+              alt="Lomba Volly Antar Dawis RT 03 Kramas" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Lomba-Lomba</span>
+            <h4>Lomba Volly Antar Dawis RT 03 Kramas</h4>
+            <span><i class="far fa-calendar-alt"></i> 27 Juli 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="lomba">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/10agustus2025"
+              alt="Lomba Kostum Budaya Unik Kemerdekaan RI" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Lomba-Lomba</span>
+            <h4>Lomba Parade Kostum Adat Nusantara</h4>
+            <span><i class="far fa-calendar-alt"></i> 10 Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="lomba">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/lomba4"
+              alt="Pertandingan Tarik Tambang Antar Dawis" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Lomba-Lomba</span>
+            <h4>Pertandingan Tarik Tambang Antar Dawis</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="lomba">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/lomba3"
+              alt="Lomba Kreasi Masakan Bergizi Dawis" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Lomba-Lomba</span>
+            <h4>Lomba Kreasi Masakan Sehat Ibu Dawis</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="lomba">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/lomba2"
+              alt="Lomba Balap Karung & Tradisional Anak" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Lomba-Lomba</span>
+            <h4>Lomba Balap Karung &amp; Permainan Anak</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="lomba">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/lomba1"
+              alt="Lomba Mewarnai & Kreativitas Anak" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Lomba-Lomba</span>
+            <h4>Lomba Mewarnai &amp; Menggambar Anak</h4>
+            <span><i class="far fa-calendar-alt"></i> Agustus 2025</span>
+          </div>
+        </div>
+
+        <!-- ================= KATEGORI: JALAN SEHAT (6 FOTO) ================= -->
+        <div class="gallery-card" data-category="jalan-sehat">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/28desember2025"
+              alt="Jalan Sehat dan Serah Terima Jabatan RT Baru" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Jalan Sehat</span>
+            <h4>Jalan Sehat &amp; Serah Terima RT Baru</h4>
+            <span><i class="far fa-calendar-alt"></i> 28 Desember 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="jalan-sehat">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/jalansehat1"
+              alt="Pelepasan Start Peserta Jalan Sehat RT 03" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Jalan Sehat</span>
+            <h4>Pelepasan Start Peserta Jalan Sehat RT 03</h4>
+            <span><i class="far fa-calendar-alt"></i> Desember 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="jalan-sehat">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/jalansehat2"
+              alt="Senam Aerobik Bugar Pagi Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Jalan Sehat</span>
+            <h4>Senam Aerobik Bugar Pagi Warga</h4>
+            <span><i class="far fa-calendar-alt"></i> Desember 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="jalan-sehat">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/jalansehat3"
+              alt="Rombongan Warga Menyusuri Rute Kramas" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Jalan Sehat</span>
+            <h4>Rombongan Warga Menyusuri Rute Kramas</h4>
+            <span><i class="far fa-calendar-alt"></i> Desember 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="jalan-sehat">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/jalansehat4"
+              alt="Pengundian Doorprize Utama & Hadiah Hiburan" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Jalan Sehat</span>
+            <h4>Pengundian Doorprize Utama &amp; Hadiah Warga</h4>
+            <span><i class="far fa-calendar-alt"></i> Desember 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" data-category="jalan-sehat">
+          <div class="gallery-thumb">
+            <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/galeri/jalansehat5"
+              alt="Sarapan Pagi Bersama & Pesta Guyub Warga" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-badge">Jalan Sehat</span>
+            <h4>Sarapan Pagi Bersama &amp; Pesta Guyub Warga</h4>
+            <span><i class="far fa-calendar-alt"></i> Desember 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal untuk Preview Foto -->
+      <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true"
+        aria-label="Pratinjau Foto Galeri">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Tutup pratinjau"><i
+            class="fas fa-times"></i></button>
+        <div class="lightbox-content">
+          <img id="lightboxImg" src="" alt="Pratinjau Foto Kegiatan">
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+      </div>
+
+      <!-- Video Lightbox Modal untuk Memutar Video Dokumenter -->
+      <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Pemutar Video Dokumenter">
+        <div class="video-modal-container">
+          <div class="video-modal-header">
+            <h4 id="videoModalTitle"><i class="fas fa-play-circle" style="color:#a855f7;"></i> Video Dokumenter</h4>
+            <button class="video-modal-close" id="videoModalClose" aria-label="Tutup pemutar video">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="video-modal-player-wrap">
+            <video id="videoPlayer" controls playsinline preload="metadata">
+              Browser Anda tidak mendukung pemutar video HTML5.
+            </video>
+          </div>
+          <div class="video-modal-footer">
+            <span id="videoModalMeta"><i class="far fa-clock"></i> Dokumentasi RT 03/RW 01 Kramas</span>
+            <span><i class="fas fa-info-circle"></i> Tekan <kbd
+                style="background:rgba(255,255,255,0.15); padding:2px 6px; border-radius:3px; font-size:0.75rem; color:#fff;">ESC</kbd>
+              untuk menutup</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Dokumenter Section -->
+      <section class="content-card" style="margin-top:50px;">
+        <div
+          style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:6px;">
+          <h3 style="margin-bottom:0;"><i class="fas fa-video" style="color:var(--primary); margin-right:8px;"></i>Video
+            Dokumenter Pilihan</h3>
+          <span
+            style="background:rgba(27,54,93,0.08); color:var(--primary); font-size:0.8rem; font-weight:600; padding:4px 12px; border-radius:20px;">
+            <i class="fas fa-film"></i> 6 Dokumenter Siap Diputar
+          </span>
+        </div>
+        <p style="color:var(--text-body); font-size:0.95rem; margin-bottom:24px;">
+          Saksikan rekaman video kegiatan masyarakat RT 03/RW 01 Kelurahan Kramas, potret gotong royong, dan kemeriahan
+          pentas kebudayaan lingkungan. Klik video untuk memutar langsung.
+        </p>
+
+        <div class="video-grid">
+          <!-- Video Card 1: jalan sehat RT 03 Kramas -->
+          <div class="video-card" data-video-src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/video1"
+            data-video-title="jalan sehat RT 03 Kramas" data-video-meta="Durasi: 0:23 • Dokumentasi Warga RT 03">
+            <div class="video-thumb">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/tb1?updatedAt=1789556953673"
+                alt="Thumbnail video jalan sehat RT 03 Kramas" loading="lazy">
+              <span class="video-hd-badge"><i class="fas fa-check-circle"></i> HD VIDEO</span>
+              <div class="video-play-btn" aria-label="Putar video karnaval">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="video-duration-badge">
+                <i class="far fa-clock"></i> 0:23
+              </div>
+            </div>
+            <div class="video-caption">
+              <span class="gallery-badge"><i class="fas fa-video"></i> Dokumenter Warga</span>
+              <h4>Kemeriahan jalan sehat RT 03 Kramas</h4>
+              <div class="video-meta-row">
+                <div class="video-meta-info">
+                  <span><i class="far fa-clock"></i> 0:23</span>
+                  <span>•</span>
+                  <span><i class="fas fa-user-circle"></i> Warga RT 03</span>
+                </div>
+                <div class="video-actions">
+                  <button type="button" class="btn-inline-play" title="Putar langsung di kartu"><i
+                      class="fas fa-play"></i> Di Sini</button>
+                  <button type="button" class="btn-play-modal" title="Putar mode teater layar penuh"><i
+                      class="fas fa-expand"></i> Putar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 2: Serah terima plang RT -->
+          <div class="video-card" data-video-src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/video2"
+            data-video-title="Serah terima plang RT" data-video-meta="Durasi: 04:15 • Warga RT 03">
+            <div class="video-thumb">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/tb2"
+                alt="Thumbnail video Serah terima plang RT" loading="lazy">
+              <span class="video-hd-badge"><i class="fas fa-check-circle"></i> HD VIDEO</span>
+              <div class="video-play-btn" aria-label="Putar video Serah terima plang RT">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="video-duration-badge">
+                <i class="far fa-clock"></i> 01:01
+              </div>
+            </div>
+            <div class="video-caption">
+              <span class="gallery-badge"><i class="fas fa-video"></i> Dokumenter Warga</span>
+              <h4>Serah terima plang RT kepada pak Slamet Riyanto selaku ketua RT yang baru.</h4>
+              <div class="video-meta-row">
+                <div class="video-meta-info">
+                  <span><i class="far fa-clock"></i> 01:01</span>
+                  <span>•</span>
+                  <span><i class="fas fa-user-circle"></i>Warga RT 03</span>
+                </div>
+                <div class="video-actions">
+                  <button type="button" class="btn-inline-play" title="Putar langsung di kartu"><i
+                      class="fas fa-play"></i> Di Sini</button>
+                  <button type="button" class="btn-play-modal" title="Putar mode teater layar penuh"><i
+                      class="fas fa-expand"></i> Putar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 3: karnaval dan pawai -->
+          <div class="video-card" data-video-src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/video3"
+            data-video-title="karnaval dan pawai RT 03" data-video-meta="Durasi: 03:22 • Warga RT 03">
+            <div class="video-thumb">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/tb3"
+                alt="Thumbnail video karnaval dan pawai" loading="lazy">
+              <span class="video-hd-badge"><i class="fas fa-check-circle"></i> HD VIDEO</span>
+              <div class="video-play-btn" aria-label="Putar video karnaval dan pawai">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="video-duration-badge">
+                <i class="far fa-clock"></i> 03:22
+              </div>
+            </div>
+            <div class="video-caption">
+              <span class="gallery-badge"><i class="fas fa-video"></i> Dokumenter Warga</span>
+              <h4>karnaval dan pawai dalam rangka pesta perayaan (biasanya mengetengahkan bermacam corak hal yang
+                menarik dari yang dirayakan itu)</h4>
+              <div class="video-meta-row">
+                <div class="video-meta-info">
+                  <span><i class="far fa-clock"></i> 03:22</span>
+                  <span>•</span>
+                  <span><i class="fas fa-user-circle"></i> Warga RT 03</span>
+                </div>
+                <div class="video-actions">
+                  <button type="button" class="btn-inline-play" title="Putar langsung di kartu"><i
+                      class="fas fa-play"></i> Di Sini</button>
+                  <button type="button" class="btn-play-modal" title="Putar mode teater layar penuh"><i
+                      class="fas fa-expand"></i> Putar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 4: pemilihan ketua RT masa jabatan 2026-2031 -->
+          <div class="video-card" data-video-src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/video4"
+            data-video-title="Pemilihan ketua RT masa jabatan 2026-2031" data-video-meta="Durasi: 02:28 • Warga RT 03">
+            <div class="video-thumb">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/tb4"
+                alt="Thumbnail video pemilihan ketua RT masa jabatan 2026-2031" loading="lazy">
+              <span class="video-hd-badge"><i class="fas fa-check-circle"></i> HD VIDEO</span>
+              <div class="video-play-btn" aria-label="Putar video pemilihan ketua RT masa jabatan 2026-2031">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="video-duration-badge">
+                <i class="far fa-clock"></i> 02:28
+              </div>
+            </div>
+            <div class="video-caption">
+              <span class="gallery-badge"><i class="fas fa-video"></i> Dokumenter Warga</span>
+              <h4>mempersembahkan pemilihan ketua RT masa jabatan 2026-2031 dengan cara ala PEMILU.</h4>
+              <div class="video-meta-row">
+                <div class="video-meta-info">
+                  <span><i class="far fa-clock"></i> 02:28</span>
+                  <span>•</span>
+                  <span><i class="fas fa-user-circle"></i> Warga RT 03</span>
+                </div>
+                <div class="video-actions">
+                  <button type="button" class="btn-inline-play" title="Putar langsung di kartu"><i
+                      class="fas fa-play"></i> Di Sini</button>
+                  <button type="button" class="btn-play-modal" title="Putar mode teater layar penuh"><i
+                      class="fas fa-expand"></i> Putar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 5: Flashmob, jalan sehat, sarapan bersama, final lomba, pembagian doorprize -->
+          <div class="video-card" data-video-src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/video5"
+            data-video-title="Flashmob, jalan sehat, sarapan bersama, final lomba, pembagian doorprize"
+            data-video-meta="Durasi: 03:30 • Pengurus Dawis RT 03">
+            <div class="video-thumb">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/tb5"
+                alt="Thumbnail video Flashmob, jalan sehat, sarapan bersama, final lomba, pembagian doorprize"
+                loading="lazy">
+              <span class="video-hd-badge"><i class="fas fa-check-circle"></i> HD VIDEO</span>
+              <div class="video-play-btn"
+                aria-label="Flashmob, jalan sehat, sarapan bersama, final lomba, pembagian doorprize">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="video-duration-badge">
+                <i class="far fa-clock"></i> 03:30
+              </div>
+            </div>
+            <div class="video-caption">
+              <span class="gallery-badge"><i class="fas fa-video"></i> Dokumenter Warga</span>
+              <h4>Flashmob, jalan sehat, sarapan bersama, final lomba, pembagian doorprize Minggu, 06 Agustus 2023 </h4>
+              <div class="video-meta-row">
+                <div class="video-meta-info">
+                  <span><i class="far fa-clock"></i> 03:30</span>
+                  <span>•</span>
+                  <span><i class="fas fa-user-circle"></i> Warga RT 03</span>
+                </div>
+                <div class="video-actions">
+                  <button type="button" class="btn-inline-play" title="Putar langsung di kartu"><i
+                      class="fas fa-play"></i> Di Sini</button>
+                  <button type="button" class="btn-play-modal" title="Putar mode teater layar penuh"><i
+                      class="fas fa-expand"></i> Putar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 6: Kerja Bakti -->
+          <div class="video-card"
+            data-video-src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/video66?updatedAt=1789606569121"
+            data-video-title="Kerja bakti RT 03 Kramas" data-video-meta="Durasi: 01:08 • Tim Dokumentasi Warga">
+            <div class="video-thumb">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/videodokumenter/tb66?updatedAt=1789606558403"
+                alt="Thumbnail video Kerja bakti RT 03" loading="lazy">
+              <span class="video-hd-badge"><i class="fas fa-check-circle"></i> HD VIDEO</span>
+              <div class="video-play-btn" aria-label="Putar video Kerja bakti">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="video-duration-badge">
+                <i class="far fa-clock"></i> 01:08
+              </div>
+            </div>
+            <div class="video-caption">
+              <span class="gallery-badge"><i class="fas fa-video"></i> Dokumenter Warga</span>
+              <h4> Kerja Bakti, pasang umbul-umbul, membuat marka jalan, gladi flashmob Minggu, 30 Juli 2023. </h4>
+              <div class="video-meta-row">
+                <div class="video-meta-info">
+                  <span><i class="far fa-clock"></i> 01:08</span>
+                  <span>•</span>
+                  <span><i class="fas fa-user-circle"></i> Warga RT 03</span>
+                </div>
+                <div class="video-actions">
+                  <button type="button" class="btn-inline-play" title="Putar langsung di kartu"><i
+                      class="fas fa-play"></i> Di Sini</button>
+                  <button type="button" class="btn-play-modal" title="Putar mode teater layar penuh"><i
+                      class="fas fa-expand"></i> Putar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 RT 03/RW 01 Kelurahan Kramas Kecamatan Tembalang Kota Semarang. All Rights Reserved.</span>
+        <span>Support by <a href="#">Ibnu Umar Fauzi Remaja RT 03/RW 01 Kramas</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== SEARCH OVERLAY ===== -->
+  <div class="search-overlay">
+    <div class="search-box">
+      <div class="search-box-input-wrap">
+        <i class="fas fa-search search-overlay-icon"></i>
+        <input type="text" id="overlaySearchInput"
+          placeholder="Ketik kata kunci (berita, agenda, informasi, profil RT)..." aria-label="Pencarian">
+        <button class="search-close" aria-label="Tutup pencarian"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-results-dropdown overlay-results" id="overlaySearchResults" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kegiatan &amp; Agenda Warga — PEMDA WARGA TIGA SATU</title>
+  <meta name="description"
+    content="Informasi agenda kegiatan warga Warga Tiga Satu. Jadwal gotong royong, posyandu, expo UMKM, dan forum komunitas masyarakat.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-progress" id="navbarProgress"></div>
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-wrapper">
+          <img src="images/logo.jpg" alt="Logo REGATU RT 03 RW 01" class="logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">RT 03/RW 01 Kramas</span>
+          <span class="brand-tagline"><span class="status-pulse"></span> Melayani &amp; Membangun</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-menu-header">
+          <span class="brand-title">Menu Navigasi</span>
+          <button class="nav-menu-close" id="navMenuClose" aria-label="Tutup menu"><i class="fas fa-times"></i></button>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"><i class="fas fa-home nav-icon"></i> <span>BERANDA</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="profil.html" class="nav-link"><i class="fas fa-landmark nav-icon"></i> <span>PROFIL</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="kegiatan-warga.html" class="nav-link active"><i class="fas fa-calendar-alt nav-icon"></i> <span>KEGIATAN WARGA</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="informasi.html" class="nav-link"><i class="fas fa-info-circle nav-icon"></i> <span>INFORMASI</span> <i class="fas fa-chevron-down arrow"></i></a>
+          <div class="dropdown-menu">
+            <a href="informasi.html#pengumuman">
+              <div class="dropdown-icon"><i class="fas fa-bullhorn"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Pengumuman</span>
+                <span class="dropdown-desc">Informasi &amp; edaran resmi RT</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="informasi.html#transparansi">
+              <div class="dropdown-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Transparansi Anggaran</span>
+                <span class="dropdown-desc">Laporan kas dan dana warga</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="informasi.html#lowongan">
+              <div class="dropdown-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Lowongan Kerja</span>
+                <span class="dropdown-desc">Peluang karir &amp; mitra kerja</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="kegiatan-warga.html">
+              <div class="dropdown-icon"><i class="fas fa-calendar-check"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Agenda Kegiatan</span>
+                <span class="dropdown-desc">Jadwal kegiatan lingkungan</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="galeri.html" class="nav-link"><i class="fas fa-images nav-icon"></i> <span>GALERI</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="kontak.html" class="nav-link"><i class="fas fa-envelope nav-icon"></i> <span>KONTAK</span></a>
+        </li>
+        <li class="mobile-drawer-cta">
+          <a href="kontak.html" class="navbar-cta-btn"><i class="fas fa-paper-plane"></i> <span>Layanan Warga</span></a>
+        </li>
+      </ul>
+
+      <div class="navbar-actions">
+        <button class="navbar-search-btn btn-search" aria-label="Cari Informasi" title="Cari Informasi">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="kontak.html" class="navbar-cta-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span>Layanan Warga</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <div class="nav-toggle-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <header class="page-banner">
+    <div class="container">
+      <div class="page-banner-content">
+        <h1>Kegiatan &amp; Agenda Warga</h1>
+        <p>Jadwal agenda kemasyarakatan, kegiatan gotong royong, layanan kesehatan posyandu, dan ajang kreativitas warga
+          Warga Tiga Satu.</p>
+        <div class="breadcrumb">
+          <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+          <i class="fas fa-chevron-right" style="font-size:10px;"></i>
+          <span class="current">Kegiatan Warga</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== AGENDA GRID ===== -->
+  <main class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Agenda Kegiatan Mendatang</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="agenda-grid">
+        <!-- Card 1 -->
+        <article class="agenda-card">
+          <div class="agenda-date-badge">
+            <span><i class="far fa-calendar-alt"></i> 15 September 2026</span>
+            <span>08:00 WIB</span>
+          </div>
+          <div class="agenda-body">
+            <h4>Musyawarah Perencanaan Pembangunan (Musrenbang)</h4>
+            <div class="agenda-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Gedung Sasana Krida Pemda</span>
+              <span><i class="fas fa-users"></i> Perwakilan RW, RT &amp; Tokoh Masyarakat</span>
+            </div>
+            <p>Forum rembug warga tahunan untuk menjaring aspirasi usulan program prioritas di bidang sarana prasarana,
+              ekonomi, dan pendidikan tahun 2027.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="agenda-card">
+          <div class="agenda-date-badge">
+            <span><i class="far fa-calendar-alt"></i> 18 September 2026</span>
+            <span>06:00 WIB</span>
+          </div>
+          <div class="agenda-body">
+            <h4>Jalan Sehat &amp; Senam Bersama Warga 31</h4>
+            <div class="agenda-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Alun-Alun Kota Warga Tiga Satu</span>
+              <span><i class="fas fa-users"></i> Terbuka untuk Seluruh Warga</span>
+            </div>
+            <p>Peringatan Hari Kesehatan Daerah dengan rute santai 5K, pembagian doorprize menarik, pemeriksaan tensi
+              gratis, dan sarapan sehat bersama.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="agenda-card">
+          <div class="agenda-date-badge">
+            <span><i class="far fa-calendar-alt"></i> 22-25 September 2026</span>
+            <span>09:00 - 21:00 WIB</span>
+          </div>
+          <div class="agenda-body">
+            <h4>Gelar Expo UMKM &amp; Pesta Rakyat Daerah</h4>
+            <div class="agenda-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Lapangan Parkir Stadion Utama</span>
+              <span><i class="fas fa-store"></i> 150+ Stand Kuliner &amp; Kerajinan</span>
+            </div>
+            <p>Pameran produk unggulan pelaku usaha lokal, pertunjukan panggung musik akustik pelajar, dan lomba kreasi
+              kuliner nusantara.</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="agenda-card">
+          <div class="agenda-date-badge">
+            <span><i class="far fa-calendar-alt"></i> 27 September 2026</span>
+            <span>07:00 WIB</span>
+          </div>
+          <div class="agenda-body">
+            <h4>Gerakan Serentak Bersih Saluran Air &amp; Lingkungan</h4>
+            <div class="agenda-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Seluruh Wilayah RW 01 - RW 12</span>
+              <span><i class="fas fa-broom"></i> Kerja Bakti Warga Mandiri</span>
+            </div>
+            <p>Aksi gotong royong pembersihan saluran drainase menghadapi musim penghujan serta penanaman bibit pohon
+              peneduh di fasum permukiman.</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="agenda-card">
+          <div class="agenda-date-badge">
+            <span><i class="far fa-calendar-alt"></i> 02 Oktober 2026</span>
+            <span>08:30 WIB</span>
+          </div>
+          <div class="agenda-body">
+            <h4>Pelatihan Pemasaran Digital untuk Pengrajin Batik</h4>
+            <div class="agenda-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Balai Pelatihan Kominfo</span>
+              <span><i class="fas fa-laptop"></i> Pelaku Usaha Mikro Binaan</span>
+            </div>
+            <p>Workshop gratis penguasaan live streaming e-commerce, fotografi produk katalog, dan pengelolaan akun
+              media sosial bisnis.</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="agenda-card">
+          <div class="agenda-date-badge">
+            <span><i class="far fa-calendar-alt"></i> 05 Oktober 2026</span>
+            <span>08:00 WIB</span>
+          </div>
+          <div class="agenda-body">
+            <h4>Layanan Terpadu Posyandu Balita &amp; Cek Kesehatan Lansia</h4>
+            <div class="agenda-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Balai Warga Kelurahan Utama</span>
+              <span><i class="fas fa-heartbeat"></i> Tim Medis Puskesmas</span>
+            </div>
+            <p>Penimbangan balita, imunisasi rutin, pembagian makanan tambahan (PMT), serta konsultasi gizi keluarga
+              bersama dokter spesialis anak.</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 RT 03/RW 01 Kelurahan Kramas Kecamatan Tembalang Kota Semarang. All Rights Reserved.</span>
+        <span>Support by <a href="#">Ibnu Umar Fauzi Remaja RT 03/RW 01 Kramas</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== SEARCH OVERLAY ===== -->
+  <div class="search-overlay">
+    <div class="search-box">
+      <div class="search-box-input-wrap">
+        <i class="fas fa-search search-overlay-icon"></i>
+        <input type="text" id="overlaySearchInput" placeholder="Ketik kata kunci (berita, agenda, informasi, profil RT)..." aria-label="Pencarian">
+        <button class="search-close" aria-label="Tutup pencarian"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-results-dropdown overlay-results" id="overlaySearchResults" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Website resmi Pemerintah Daerah RT 03/RW 01 Kelurahan Kramas - Portal informasi, berita, dan pelayanan publik untuk masyarakat.">
+  <meta name="keywords" content="Warga Tiga Satu, pemerintah daerah, berita daerah, UMKM">
+  <title>WARGA RT 03/RW 01 Kelurahan Kramas - Portal Resmi RT 03/RW 01 Kelurahan Kramas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Loading Bar -->
+  <div class="loading-bar" id="loadingBar"></div>
+
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-progress" id="navbarProgress"></div>
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-wrapper">
+          <img src="images/logo.jpg" alt="Logo REGATU RT 03 RW 01" class="logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">RT 03/RW 01 Kramas</span>
+          <span class="brand-tagline"><span class="status-pulse"></span> Melayani &amp; Membangun</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-menu-header">
+          <span class="brand-title">Menu Navigasi</span>
+          <button class="nav-menu-close" id="navMenuClose" aria-label="Tutup menu"><i class="fas fa-times"></i></button>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active"><i class="fas fa-home nav-icon"></i> <span>BERANDA</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="profil.html" class="nav-link"><i class="fas fa-landmark nav-icon"></i> <span>PROFIL</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="kegiatan-warga.html" class="nav-link"><i class="fas fa-calendar-alt nav-icon"></i> <span>KEGIATAN
+              WARGA</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="informasi.html" class="nav-link"><i class="fas fa-info-circle nav-icon"></i> <span>INFORMASI</span>
+            <i class="fas fa-chevron-down arrow"></i></a>
+          <div class="dropdown-menu">
+            <a href="informasi.html#pengumuman">
+              <div class="dropdown-icon"><i class="fas fa-bullhorn"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Pengumuman</span>
+                <span class="dropdown-desc">Informasi &amp; edaran resmi RT</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="informasi.html#transparansi">
+              <div class="dropdown-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Transparansi Anggaran</span>
+                <span class="dropdown-desc">Laporan kas dan dana warga</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="informasi.html#lowongan">
+              <div class="dropdown-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Lowongan Kerja</span>
+                <span class="dropdown-desc">Peluang karir &amp; mitra kerja</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+            <a href="kegiatan-warga.html">
+              <div class="dropdown-icon"><i class="fas fa-calendar-check"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Agenda Kegiatan</span>
+                <span class="dropdown-desc">Jadwal kegiatan lingkungan</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="galeri.html" class="nav-link"><i class="fas fa-images nav-icon"></i> <span>GALERI</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="kontak.html" class="nav-link"><i class="fas fa-envelope nav-icon"></i> <span>KONTAK</span></a>
+        </li>
+        <li class="mobile-drawer-cta">
+          <a href="kontak.html" class="navbar-cta-btn"><i class="fas fa-paper-plane"></i> <span>Layanan Warga</span></a>
+        </li>
+      </ul>
+
+      <div class="navbar-actions">
+        <button class="navbar-search-btn btn-search" aria-label="Cari Informasi" title="Cari Informasi">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="kontak.html" class="navbar-cta-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span>Layanan Warga</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <div class="nav-toggle-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== TICKER BAR ===== -->
+  <div class="ticker-bar">
+    <div class="ticker-label"><i class="fas fa-bullhorn" style="margin-right:8px"></i> INFO</div>
+    <div class="ticker-content">
+      <span>Program PJR jentik nyamuk setiap hari jumat</span>
+      <span>Program makan Bergizi Gratis Anak tahun 2026</span>
+      <span>Program pilah sampah sepanjang tahun 2026 dan tahun berikutnya</span>
+      <span>Program membuat taman toga RT 03 Kelurahan Kramas</span>
+      <span>Kegiatan Kerja Bakti setiap hari minggu</span>
+      <span>Kegiatan cek kesehatan di pospindu</span>
+    </div>
+  </div>
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active">
+        <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/pilrt" alt="pemilihan ketua RT">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-slide">
+        <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/karnaval"
+          alt="Pasar Tradisional Warga Tiga Satu">
+        <div class="kegiatan karnaval"></div>
+      </div>
+      <div class="hero-slide">
+        <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/karnaval1" alt="Festival karnaval">
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1>Selamat Datang di Portal Website Resmi Warga RT 03/RW 01 Kramas</h1>
+      <p>Bersama membangun daerah yang maju, sejahtera, dan berbudaya</p>
+
+      <!-- ===== HERO SEARCH BAR ===== -->
+      <div class="hero-search-wrapper">
+        <form class="hero-search-form" id="heroSearchForm" onsubmit="event.preventDefault();">
+          <div class="hero-search-box">
+            <i class="fas fa-search hero-search-icon"></i>
+            <input type="text" id="heroSearchInput" class="hero-search-input"
+              placeholder="Cari berita, agenda kegiatan, pengumuman, pengurus RT..." autocomplete="off"
+              aria-label="Cari di Portal Warga">
+            <button type="button" class="hero-search-clear" id="heroSearchClear" aria-label="Hapus pencarian"
+              style="display:none;">
+              <i class="fas fa-times"></i>
+            </button>
+            <button type="submit" class="hero-search-submit" aria-label="Tombol Cari">
+              <span>Cari</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <!-- Live Search Dropdown -->
+          <div class="search-results-dropdown" id="heroSearchResults" style="display:none;"></div>
+        </form>
+
+        <!-- Quick Tags -->
+        <div class="hero-quick-tags">
+          <span class="quick-tags-label"><i class="fas fa-fire-alt"></i> Populer:</span>
+          <button type="button" class="quick-tag-btn" data-query="Lomba Volly">Lomba Volly</button>
+          <button type="button" class="quick-tag-btn" data-query="Karnaval">Karnaval</button>
+          <button type="button" class="quick-tag-btn" data-query="Ketua RT">Ketua RT</button>
+          <button type="button" class="quick-tag-btn" data-query="Jalan Sehat">Jalan Sehat</button>
+          <button type="button" class="quick-tag-btn" data-query="Kerja Bakti">Kerja Bakti</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-controls">
+      <button class="hero-btn prev" aria-label="Slide sebelumnya"><i class="fas fa-chevron-left"></i></button>
+      <button class="hero-btn next" aria-label="Slide berikutnya"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="hero-dots">
+      <button class="hero-dot active" aria-label="Slide 1"></button>
+      <button class="hero-dot" aria-label="Slide 2"></button>
+      <button class="hero-dot" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ===== KETUA RT ===== -->
+  <section class="section KETUA RT" id="KETUA RT">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>KETUA RT</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="kd-wrapper fade-in">
+        <div class="kd-photo">
+          <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotopakrt/pakrtbaru"
+            alt="Kepala Daerah Warga Tiga Satu" style="aspect-ratio: 3/4; object-fit: cover;">
+          <div class="kd-photo-caption">
+            <div class="name">Bapak Slamet riyanto</div>
+            <div class="title">KETUA RT 03/RW 01 Periode 2026-2031</div>
+            <div style="border-top:1px solid rgba(255,255,255,0.3); margin:8px 0; padding-top:8px;">
+              <div class="name">Bapak Bunakur Windriatmoko</div>
+              <div class="title">KETUA RT 03/RW 01 Periode 2021-2025</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita Terbaru Cards next to KD photo -->
+        <div style="flex:1;">
+          <div style="margin-bottom:20px;">
+            <h3 style="font-family:var(--font-primary); font-size:1.3rem; color:var(--text-dark); margin-bottom:4px;">
+              Berita Terbaru</h3>
+            <div class="divider" style="margin:0; width:50px;"></div>
+          </div>
+          <div class="berita-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+            <div class="berita-card">
+              <div class="card-image">
+                <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/27juli2025"
+                  alt="Lomba Volly antar dawis tahun 2025">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-folder"></i> berita</span>
+                <span><i class="far fa-calendar"></i> 27 Juli 2025</span>
+              </div>
+              <div class="card-body">
+                <h3>Lomba Volly antar dawis tahun 2025</h3>
+                <p>lomba volly antar dawis acara 17 agutusan bersama warga RT 03/RW 01 Kelurahan Kramas dan dimenangkan
+                  oleh dawis brokoli.</p>
+              </div>
+            </div>
+
+            <div class="berita-card">
+              <div class="card-image">
+                <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/10agustus2025"
+                  alt="Karnaval peringatan hari kemerdekaan RI tahun 2025">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-folder"></i> berita</span>
+                <span><i class="far fa-calendar"></i> 10 Agustus 2025</span>
+              </div>
+              <div class="card-body">
+                <h3>Karnaval peringatan hari kemerdekaan RI tahun 2025</h3>
+                <p>Karnaval memeringati 17 agustus yang bertema kemerdekaan, warga menggunakan berbagai baju adat
+                  indonesia yang dibarengi kreasi masyarakat</p>
+              </div>
+            </div>
+
+            <div class="berita-card">
+              <div class="card-image">
+                <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/28desember2025"
+                  alt="Acara jalan sehat peresmian RT baru 2025">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-folder"></i> berita</span>
+                <span><i class="far fa-calendar"></i> 28 Desember 2025</span>
+              </div>
+              <div class="card-body">
+                <h3>Acara jalan sehat peresmian RT baru 2025</h3>
+                <p>acara jalan sehat dan dibarengi serah terima jabatan Bapak RT baru periode 2026-2031 </p>
+              </div>
+            </div>
+
+            <div class="berita-card">
+              <div class="card-image">
+                <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/pilrt"
+                  alt="Musyawarah dan Pemilihan Ketua RT 03 RW 01 Periode 2026-2031">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-folder"></i> berita</span>
+                <span><i class="far fa-calendar"></i> 15 Januari 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Musyawarah &amp; Pemilihan Ketua RT 03/RW 01 Periode 2026-2031</h3>
+                <p>Kegiatan musyawarah pemilihan ketua RT baru bersama seluruh warga RT 03/RW 01 Kelurahan Kramas yang
+                  berlangsung guyub dan tertib.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOTO UNGGULAN KEGIATAN ===== -->
+  <section class="section umkm-section" id="foto-kegiatan">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>Foto Unggulan Kegiatan</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="umkm-carousel fade-in">
+        <div class="umkm-track">
+          <div class="umkm-slide">
+            <div class="umkm-slide-image">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/karnaval"
+                alt="Karnaval Semarak Kemerdekaan RI RT 03 RW 01">
+            </div>
+            <div class="umkm-slide-content">
+              <span class="umkm-category">Karnaval &amp; Kebudayaan</span>
+              <h3>Karnaval Semarak Kemerdekaan RI</h3>
+              <p>Kemeriahan warga RT 03/RW 01 Kelurahan Kramas dalam merayakan HUT Kemerdekaan RI dengan parade baju
+                adat nusantara serta penampilan aneka ragam kreasi seni warga yang penuh semangat kebersamaan.</p>
+            </div>
+          </div>
+          <div class="umkm-slide">
+            <div class="umkm-slide-image">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/pilrt"
+                alt="Musyawarah Pemilihan Ketua RT 03 RW 01">
+            </div>
+            <div class="umkm-slide-content">
+              <span class="umkm-category">Musyawarah Warga</span>
+              <h3>Musyawarah Pemilihan Ketua RT 03/RW 01</h3>
+              <p>Momen penting kebersamaan seluruh warga RT 03/RW 01 Kelurahan Kramas dalam pelaksanaan pemilihan ketua
+                RT secara langsung, terbuka, demokratis, dan penuh suasana kekeluargaan untuk periode 2026-2031.</p>
+            </div>
+          </div>
+          <div class="umkm-slide">
+            <div class="umkm-slide-image">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/28desember2025"
+                alt="Jalan Sehat dan Guyub Rukun Warga">
+            </div>
+            <div class="umkm-slide-content">
+              <span class="umkm-category">Olahraga &amp; Guyub Rukun</span>
+              <h3>Jalan Sehat &amp; Gebyar Kerukunan Warga</h3>
+              <p>Keseruan acara jalan sehat santai dan peresmian kepengurusan RT baru yang diikuti antusias oleh warga
+                dari segala usia, mewujudkan lingkungan warga yang sehat, rukun, dan harmonis.</p>
+            </div>
+          </div>
+          <div class="umkm-slide">
+            <div class="umkm-slide-image">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/berita/27juli2025"
+                alt="Lomba Volly Antar Dawis Warga">
+            </div>
+            <div class="umkm-slide-content">
+              <span class="umkm-category">Perlombaan &amp; Kebersamaan</span>
+              <h3>Lomba Volly Antar Dawis Warga</h3>
+              <p>Ajang pertandingan volly antar dawis yang penuh semangat sportivitas dan keceriaan, mempererat tali
+                persaudaraan serta kekompakan antar warga RT 03/RW 01 Kelurahan Kramas.</p>
+            </div>
+          </div>
+          <div class="umkm-slide">
+            <div class="umkm-slide-image">
+              <img src="https://ik.imagekit.io/nunuibnu/websitewarga31/fotodepan/karnaval1"
+                alt="Pawai Kreasi dan Seni Warga RT 03 RW 01">
+            </div>
+            <div class="umkm-slide-content">
+              <span class="umkm-category">Seni &amp; Kreativitas</span>
+              <h3>Pawai Kreasi &amp; Pesta Budaya Warga</h3>
+              <p>Partisipasi antusias warga menampilkan ragam kostum kebudayaan dan atraksi seni kreatif yang memukau,
+                mencerminkan semangat gotong royong dan kebersamaan warga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="umkm-controls">
+        <button class="umkm-btn prev" aria-label="Foto kegiatan sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <button class="umkm-btn next" aria-label="Foto kegiatan berikutnya"><i
+            class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATISTIK ===== -->
+  <section class="statistik-section">
+    <div class="container">
+      <div class="statistik-grid">
+        <div class="statistik-item fade-in">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-number" data-count="385000" data-suffix="">0</div>
+          <div class="stat-label">Jumlah Penduduk</div>
+        </div>
+        <div class="statistik-item fade-in">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <div class="stat-number" data-count="12" data-suffix="">0</div>
+          <div class="stat-label">Kecamatan</div>
+        </div>
+        <div class="statistik-item fade-in">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="stat-number" data-count="89" data-suffix="">0</div>
+          <div class="stat-label">Kelurahan/Desa</div>
+        </div>
+        <div class="statistik-item fade-in">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="stat-number" data-count="4500" data-suffix="+">0</div>
+          <div class="stat-label">UMKM Terdaftar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 RT 03/RW 01 Kelurahan Kramas Kecamatan Tembalang Kota Semarang. All Rights Reserved.</span>
+        <span>Support by <a href="#">Ibnu Umar Fauzi Remaja RT 03/RW 01 Kramas</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== SEARCH OVERLAY ===== -->
+  <div class="search-overlay">
+    <div class="search-box">
+      <div class="search-box-input-wrap">
+        <i class="fas fa-search search-overlay-icon"></i>
+        <input type="text" id="overlaySearchInput"
+          placeholder="Ketik kata kunci (berita, agenda, informasi, profil RT)..." aria-label="Pencarian">
+        <button class="search-close" aria-label="Tutup pencarian"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-results-dropdown overlay-results" id="overlaySearchResults" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
