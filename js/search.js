@@ -14,8 +14,8 @@ function initHeroSearch() {
     formEl
   });
 
-  // Quick Tags
-  const quickTagBtns = document.querySelectorAll('.quick-tag-btn');
+  // Quick Tags in Hero Section
+  const quickTagBtns = document.querySelectorAll('.hero-quick-tags .quick-tag-btn');
   quickTagBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const query = btn.getAttribute('data-query');
@@ -30,15 +30,17 @@ function initHeroSearch() {
 function initSearchOverlay() {
   const searchBtns = document.querySelectorAll('.btn-search');
   const overlay = document.querySelector('.search-overlay');
-  const closeBtn = overlay ? overlay.querySelector('.search-close') : null;
-  const overlayInput = document.getElementById('overlaySearchInput') || (overlay ? overlay.querySelector('input') : null);
+  if (!overlay) return;
+
+  const closeBtn = overlay.querySelector('.search-close');
+  const overlayInput = document.getElementById('overlaySearchInput') || overlay.querySelector('input');
   const overlayResults = document.getElementById('overlaySearchResults');
 
-  if (!overlay) return;
+  let overlayController = null;
 
   // Setup live search in overlay if results container exists
   if (overlayInput && overlayResults) {
-    setupLiveSearchInstance({
+    overlayController = setupLiveSearchInstance({
       inputEl: overlayInput,
       resultsEl: overlayResults,
       onSelect: () => {
@@ -47,6 +49,18 @@ function initSearchOverlay() {
       }
     });
   }
+
+  // Quick Tags in Search Overlay
+  const overlayQuickTags = overlay.querySelectorAll('.quick-tag-btn');
+  overlayQuickTags.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const query = btn.getAttribute('data-query');
+      if (query && overlayController) {
+        overlayController.triggerSearch(query);
+      }
+    });
+  });
 
   // Open overlay
   searchBtns.forEach(btn => {

@@ -1974,6 +1974,15 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
+.overlay-quick-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
 /* ===== RUNNING TEXT / TICKER ===== */
 .ticker-bar {
   background: var(--primary);
