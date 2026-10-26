@@ -9,7 +9,7 @@
     content="Profil lengkap Pemerintah Daerah Warga Tiga Satu. Visi misi, pimpinan daerah, sejarah, lambang, dan struktur organisasi.">
   <link rel="icon" type="image/jpeg" href="images/logo.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 </head>
 
 <body>
@@ -143,16 +143,20 @@
   </header>
 
   <!-- ===== MAIN CONTENT ===== -->
-  <main class="section">
-    <div class="container">
+  <main class="section glass-ambient-section">
+    <!-- Ambient Luminous Mesh Orbs for Glassmorphism Refraction -->
+    <div class="glass-ambient-decor shape-1"></div>
+    <div class="glass-ambient-decor shape-2"></div>
+    <div class="glass-ambient-decor shape-3"></div>
+
+    <div class="container" style="position:relative; z-index:1;">
 
       <!-- Pimpinan Lingkungan -->
-      <section class="content-card">
+      <section class="glass-card content-card">
         <h3>Pimpinan Lingkungan RT 03 RW 01 Kelurahan Kramas</h3>
         <div
           style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:24px; margin-top:20px;">
-          <div
-            style="display:flex; gap:26px; align-items:flex-start; background:var(--bg-light); padding:28px; border-radius:var(--radius-md); border:1px solid var(--border-light); box-shadow:var(--shadow-sm); flex-wrap:wrap;">
+          <div class="leader-card">
             <img src="images/fotopakrt/pakrtbaru.jpeg"
               alt="Bapak RT 03 RW 01 Kel. Kramas"
               style="width:220px; height:280px; object-fit:cover; border-radius:var(--radius-md); border:4px solid #fff; box-shadow:var(--shadow-md); flex-shrink:0;">
@@ -169,8 +173,7 @@
             </div>
           </div>
 
-          <div
-            style="display:flex; gap:26px; align-items:flex-start; background:var(--bg-light); padding:28px; border-radius:var(--radius-md); border:1px solid var(--border-light); box-shadow:var(--shadow-sm); flex-wrap:wrap;">
+          <div class="leader-card">
             <img src="images/galeri/jalansehat2.jpeg"
               alt="Ibu RW 01 Kel. Kramas"
               style="width:220px; height:280px; object-fit:cover; border-radius:var(--radius-md); border:4px solid #fff; box-shadow:var(--shadow-md); flex-shrink:0;">
@@ -191,13 +194,13 @@
       </section>
 
       <!-- Visi & Misi -->
-      <section class="content-card" id="visi-misi">
+      <section class="glass-card content-card" id="visi-misi">
         <h3>Visi &amp; Misi Daerah</h3>
         <div style="margin-bottom:24px;">
           <h4 style="font-family:var(--font-primary); color:var(--text-dark); font-size:1.1rem; margin-bottom:8px;">
             Visi:</h4>
           <blockquote
-            style="background:var(--bg-light); padding:16px 24px; border-left:4px solid var(--primary); border-radius:0 var(--radius-sm) var(--radius-sm) 0; font-style:italic; font-size:1.05rem; color:var(--primary);">
+            style="background:rgba(255, 255, 255, 0.72); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); padding:18px 24px; border-left:4px solid var(--accent); border-radius:0 var(--radius-md) var(--radius-md) 0; font-style:italic; font-size:1.05rem; color:var(--primary); border-top:1px solid rgba(255,255,255,0.7); border-right:1px solid rgba(255,255,255,0.7); border-bottom:1px solid rgba(255,255,255,0.7); box-shadow:0 4px 15px rgba(15,23,42,0.04);">
             "RT 03 RW 01 Kel. Kramas menjadi pusat ekonomi yang maju, berkeadilan sosial, lestari dan inklusif."
           </blockquote>
         </div>
@@ -208,7 +211,7 @@
           <div style="display:grid; gap:12px;">
             <div style="display:flex; gap:14px; align-items:flex-start;">
               <div
-                style="width:32px; height:32px; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">
+                style="width:34px; height:34px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0; box-shadow:0 4px 10px rgba(15,23,42,0.25);">
                 1</div>
               <p style="margin:0; font-size:0.95rem; color:var(--text-body); padding-top:4px;">Mewujudkan pemerataan
                 pendidikan dan kesejahteraan sosial masyarakat yang toleran dan berbuda dalam semangat kebhinekaan,
@@ -245,7 +248,7 @@
 
       <!-- Sejarah & Lambang -->
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:30px;">
-        <section class="content-card" id="sejarah">
+        <section class="glass-card content-card" id="sejarah">
           <h3>Sejarah Singkat</h3>
           <p style="line-height:1.7; color:var(--text-body); font-size:0.95rem;">
             Meskipun catatan sejarah resmi mengenai asal-usul penamaan "Kramas" belum terdokumentasikan secara luas
@@ -262,7 +265,7 @@
           </p>
         </section>
 
-        <section class="content-card" id="lambang">
+        <section class="glass-card content-card" id="lambang">
           <h3>Makna Lambang REGATU</h3>
           <div style="display:flex; gap:20px; align-items:center; margin-top:10px;">
             <img src="images/logo.jpg" alt="Lambang REGATU"

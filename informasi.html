@@ -9,7 +9,7 @@
     content="Pusat informasi publik resmi Warga Tiga Satu. Pengumuman, lowongan kerja, dan informasi warga terkini.">
   <link rel="icon" type="image/jpeg" href="images/logo.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 </head>
 
 <body>
@@ -142,15 +142,19 @@
   </header>
 
   <!-- ===== MAIN CONTENT ===== -->
-  <main class="section">
-    <div class="container">
+  <main class="section glass-ambient-section">
+    <!-- Ambient Luminous Mesh Orbs for Glassmorphism Refraction -->
+    <div class="glass-ambient-decor shape-1"></div>
+    <div class="glass-ambient-decor shape-2"></div>
+    <div class="glass-ambient-decor shape-3"></div>
+
+    <div class="container" style="position:relative; z-index:1;">
 
       <!-- Section Pengumuman -->
-      <section class="content-card" id="pengumuman">
+      <section class="glass-card content-card" id="pengumuman">
         <h3>Pengumuman Resmi</h3>
         <div style="display:grid; gap:16px; margin-top:20px;">
-          <div
-            style="padding:16px 20px; background:var(--bg-light); border-left:4px solid var(--accent); border-radius:var(--radius-sm);">
+          <div class="pengumuman-item">
             <div>
               <span style="font-size:0.8rem; color:var(--text-light);"><i class="far fa-calendar-alt"></i> 1 Januari
                 2027</span>
@@ -160,8 +164,7 @@
             </div>
           </div>
 
-          <div
-            style="padding:16px 20px; background:var(--bg-light); border-left:4px solid var(--primary); border-radius:var(--radius-sm);">
+          <div class="pengumuman-item" style="border-left-color:var(--primary);">
             <div>
               <span style="font-size:0.8rem; color:var(--text-light);"><i class="far fa-calendar-alt"></i> 2 Januari
                 2027</span>
@@ -171,8 +174,7 @@
             </div>
           </div>
 
-          <div
-            style="padding:16px 20px; background:var(--bg-light); border-left:4px solid var(--accent); border-radius:var(--radius-sm);">
+          <div class="pengumuman-item">
             <div>
               <span style="font-size:0.8rem; color:var(--text-light);"><i class="far fa-calendar-alt"></i> 3 Januari
                 2027</span>
@@ -185,16 +187,16 @@
       </section>
 
       <!-- Section Lowongan Kerja -->
-      <section class="content-card" id="lowongan">
+      <section class="glass-card content-card" id="lowongan">
         <h3>Informasi Lowongan Kerja</h3>
         <p style="color:var(--text-body); font-size:0.95rem; margin-bottom:20px;">
           Informasi jika ada
         </p>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
-          <div style="border:1px solid var(--border-light); padding:20px; border-radius:var(--radius-md);">
+          <div class="lowongan-card">
             <span
-              style="font-size:0.75rem; background:rgba(72, 255, 0, 0.12); color:var(--accent); padding:4px 10px; border-radius:12px; font-weight:600;">misal
+              style="display:inline-block; font-size:0.75rem; background:rgba(251,209,0,0.2); border:1px solid rgba(251,209,0,0.4); color:var(--accent-dark); padding:4px 12px; border-radius:20px; font-weight:700;">misal
               pemerintah</span>
             <h4 style="font-family:var(--font-primary); font-size:1.1rem; color:var(--text-dark); margin:10px 0 6px 0;">
               misal desainer</h4>
@@ -204,9 +206,9 @@
               2027</span>
           </div>
 
-          <div style="border:1px solid var(--border-light); padding:20px; border-radius:var(--radius-md);">
+          <div class="lowongan-card">
             <span
-              style="font-size:0.75rem; background:rgba(72, 255, 0, 0.12); color:var(--accent); padding:4px 10px; border-radius:12px; font-weight:600;">DISKOMINFO</span>
+              style="display:inline-block; font-size:0.75rem; background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.35); color:#059669; padding:4px 12px; border-radius:20px; font-weight:700;">DISKOMINFO</span>
             <h4 style="font-family:var(--font-primary); font-size:1.1rem; color:var(--text-dark); margin:10px 0 6px 0;">
               Tenaga Ahli Programmer Web &amp; Mobile</h4>
             <p style="font-size:0.85rem; color:var(--text-body); margin-bottom:12px;">Menguasai JavaScript modern, REST
