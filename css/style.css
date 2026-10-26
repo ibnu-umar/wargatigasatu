@@ -1200,8 +1200,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
-  padding: 30px 20px 20px;
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 24px 20px 20px;
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   color: white;
   text-align: center;
@@ -1238,17 +1241,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .berita-card {
-  background: var(--bg-white);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.9);
   transition: var(--transition);
-  border: 1px solid var(--border-light);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .berita-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(251, 209, 0, 0.45);
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.12), 0 0 20px rgba(251, 209, 0, 0.15);
 }
 
 .berita-card .card-image {
@@ -1562,11 +1569,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pelayanan-card {
-  background: var(--bg-white);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-lg);
   padding: 32px 24px;
   text-align: center;
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.95);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
