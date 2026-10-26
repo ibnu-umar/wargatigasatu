@@ -1,5 +1,5 @@
 /* ===== IMPORTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap&subset=latin');
 
 /* ===== CSS VARIABLES ===== */
 :root {
@@ -3917,4 +3917,187 @@ textarea.form-control {
   border-color: var(--accent);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 25px rgba(251, 209, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5);
 }
+
+/* ===================================================
+   PERFORMANCE OPTIMIZATIONS
+   - Mempercepat rendering di desktop & mobile
+   =================================================== */
+
+/* --- 1. Contain: isolasi render agar browser lebih efisien --- */
+.glass-card,
+.content-card,
+.glass-ambient-section {
+  contain: layout style;
+}
+
+/* --- 2. Will-change HANYA saat hover (bukan secara default) --- */
+.glass-card:hover,
+.glass-icon-box:hover {
+  will-change: transform;
+}
+
+/* --- 3. MOBILE PERFORMANCE: matikan backdrop-filter di layar kecil
+         backdrop-filter sangat berat di GPU mobile --- */
+@media (max-width: 768px) {
+  /* Navbar - gunakan background solid agar lebih ringan */
+  .navbar,
+  .navbar.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.97);
+  }
+
+  /* Glass cards - fallback ke solid semi-transparent */
+  .glass-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+  }
+
+  .glass-card-dark {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(15, 23, 42, 0.92);
+  }
+
+  /* Content card */
+  .content-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff;
+  }
+
+  /* Search overlay - pertahankan sedikit blur untuk readability */
+  .search-overlay {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(15, 23, 42, 0.88);
+  }
+
+  .search-overlay .search-box-input-wrap input {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  /* Glass icon box */
+  .glass-icon-box {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Glass pill */
+  .glass-pill {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Glass btn */
+  .glass-btn {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* Page banner breadcrumb */
+  .page-banner .breadcrumb {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* Ambient decor - kurangi blur & nonaktifkan animasi di mobile */
+  .glass-ambient-decor {
+    filter: blur(40px);
+    opacity: 0.45;
+    animation: none;
+  }
+
+  /* Glass card hover - nonaktifkan transform di mobile (touch lebih baik tanpa) */
+  .glass-card:hover {
+    transform: none;
+  }
+
+  /* Kurangi shimmer effect - ringan di mobile */
+  .glass-card::before {
+    display: none;
+  }
+}
+
+/* --- 4. Tablet: kurangi blur (tidak matikan total) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .glass-card {
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+  }
+
+  .navbar,
+  .navbar.scrolled {
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+  }
+
+  .glass-ambient-decor {
+    filter: blur(55px);
+    opacity: 0.55;
+  }
+}
+
+/* --- 5. Prefers Reduced Motion: hargai preferensi aksesibilitas --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .glass-ambient-decor {
+    animation: none;
+  }
+
+  .glass-card:hover {
+    transform: none;
+  }
+
+  .glass-card::before {
+    display: none;
+  }
+}
+
+/* --- 6. Image performance: semua img pakai optimal rendering --- */
+img {
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+  decoding: async;
+}
+
+/* --- 7. Galeri: optimasi rendering grid yang banyak elemen --- */
+.gallery-grid,
+.gallery-masonry {
+  contain: layout;
+}
+
+.gallery-item img,
+.gallery-media-wrap img {
+  content-visibility: auto;
+}
+
+/* --- 8. Footer: content-visibility untuk lazy render --- */
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 200px;
+}
+
+/* --- 9. Optimasi ticker bar animasi --- */
+@media (max-width: 480px) {
+  .ticker-content span {
+    animation-duration: 20s;
+  }
+}
+
+
 

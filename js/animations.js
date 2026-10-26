@@ -1,20 +1,22 @@
 // ===== SCROLL TO TOP =====
 function initScrollToTop() {
   const btn = document.querySelector('.scroll-top');
+  if (!btn) return;
 
+  let rafPending = false;
   window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 400) {
-      btn.classList.add('visible');
-    } else {
-      btn.classList.remove('visible');
+    if (!rafPending) {
+      rafPending = true;
+      requestAnimationFrame(() => {
+        btn.classList.toggle('visible', window.pageYOffset > 400);
+        rafPending = false;
+      });
     }
-  });
+  }, { passive: true });
 
-  if (btn) {
-    btn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
 
 // ===== SCROLL ANIMATIONS =====

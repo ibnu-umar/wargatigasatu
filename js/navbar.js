@@ -4,6 +4,8 @@ function initStickyNavbar() {
   const progressBar = document.querySelector('.navbar-progress');
   if (!navbar) return;
 
+  let rafPending = false;
+
   const updateScroll = () => {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     const winHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -18,9 +20,19 @@ function initStickyNavbar() {
       const progressPercent = Math.min(100, Math.max(0, (currentScroll / winHeight) * 100));
       progressBar.style.width = progressPercent + '%';
     }
+
+    rafPending = false;
   };
 
-  window.addEventListener('scroll', updateScroll, { passive: true });
+  // Throttle scroll dengan requestAnimationFrame
+  const onScroll = () => {
+    if (!rafPending) {
+      rafPending = true;
+      requestAnimationFrame(updateScroll);
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
   updateScroll();
 }
 
