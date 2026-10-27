@@ -9,6 +9,11 @@ function initVideoModal() {
 
   if (!videoCards.length) return;
 
+  // Ensure videoModal is mounted directly onto document.body for viewport centering
+  if (videoModal && videoModal.parentElement !== document.body) {
+    document.body.appendChild(videoModal);
+  }
+
   function openVideoModal(videoSrc, title, meta) {
     if (!videoModal || !videoPlayer) return;
 
@@ -43,15 +48,21 @@ function initVideoModal() {
     const thumbArea = card.querySelector('.video-thumb');
     if (!thumbArea || !videoSrc) return;
 
-    // Replace thumbnail area with HTML5 video player
+    // Replace thumbnail area with a responsive HTML5 video player
+    thumbArea.style.height = '230px';
+    thumbArea.style.aspectRatio = 'auto';
     thumbArea.innerHTML = `
-      <video controls autoplay playsinline style="width:100%; height:100%; object-fit:contain; background:#000;">
+      <video controls autoplay playsinline style="width:100%; height:100%; object-fit:contain; background:#000; display:block;">
         <source src="${videoSrc}" type="video/mp4">
         Browser Anda tidak mendukung tag video.
       </video>
     `;
     const v = thumbArea.querySelector('video');
-    if (v) v.play().catch(() => {});
+    if (v) {
+      v.play().catch(() => {});
+      // Scroll card into view on mobile
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
   }
 
   videoCards.forEach(card => {
@@ -61,6 +72,16 @@ function initVideoModal() {
       if (e.target.closest('.btn-inline-play')) {
         e.stopPropagation();
         playInline(card);
+        return;
+      }
+
+      // If modal play button was clicked, open modal
+      if (e.target.closest('.btn-play-modal')) {
+        e.stopPropagation();
+        const videoSrc = card.getAttribute('data-video-src');
+        const title = card.getAttribute('data-video-title') || card.querySelector('.video-caption h4')?.textContent;
+        const meta = card.getAttribute('data-video-meta') || card.querySelector('.video-caption span')?.textContent;
+        if (videoSrc) openVideoModal(videoSrc, title, meta);
         return;
       }
 
@@ -84,6 +105,18 @@ function initVideoModal() {
       inlineBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         playInline(card);
+      });
+    }
+
+    // Support explicit modal play button
+    const modalBtn = card.querySelector('.btn-play-modal');
+    if (modalBtn) {
+      modalBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const videoSrc = card.getAttribute('data-video-src');
+        const title = card.getAttribute('data-video-title') || card.querySelector('.video-caption h4')?.textContent;
+        const meta = card.getAttribute('data-video-meta') || card.querySelector('.video-caption span')?.textContent;
+        if (videoSrc) openVideoModal(videoSrc, title, meta);
       });
     }
   });

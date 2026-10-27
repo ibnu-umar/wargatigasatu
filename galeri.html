@@ -13,7 +13,7 @@
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=4.0">
+  <link rel="stylesheet" href="css/style.css?v=4.1">
 </head>
 
 <body>
@@ -565,40 +565,6 @@
         </div>
       </div>
 
-      <!-- Lightbox Modal untuk Preview Foto -->
-      <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true"
-        aria-label="Pratinjau Foto Galeri">
-        <button class="lightbox-close" id="lightboxClose" aria-label="Tutup pratinjau"><i
-            class="fas fa-times"></i></button>
-        <div class="lightbox-content">
-          <img id="lightboxImg" src="" alt="Pratinjau Foto Kegiatan">
-          <div class="lightbox-caption" id="lightboxCaption"></div>
-        </div>
-      </div>
-
-      <!-- Video Lightbox Modal untuk Memutar Video Dokumenter -->
-      <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Pemutar Video Dokumenter">
-        <div class="video-modal-container">
-          <div class="video-modal-header">
-            <h4 id="videoModalTitle"><i class="fas fa-play-circle" style="color:#a855f7;"></i> Video Dokumenter</h4>
-            <button class="video-modal-close" id="videoModalClose" aria-label="Tutup pemutar video">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <div class="video-modal-player-wrap">
-            <video id="videoPlayer" controls playsinline preload="metadata">
-              Browser Anda tidak mendukung pemutar video HTML5.
-            </video>
-          </div>
-          <div class="video-modal-footer">
-            <span id="videoModalMeta"><i class="far fa-clock"></i> Dokumentasi RT 03/RW 01 Kramas</span>
-            <span><i class="fas fa-info-circle"></i> Tekan <kbd
-                style="background:rgba(255,255,255,0.15); padding:2px 6px; border-radius:3px; font-size:0.75rem; color:#fff;">ESC</kbd>
-              untuk menutup</span>
-          </div>
-        </div>
-      </div>
-
       <!-- Video Dokumenter Section -->
       <section class="content-card" style="margin-top:50px;">
         <div
@@ -840,6 +806,45 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <!-- ===== LIGHTBOX MODAL UNTUK PREVIEW FOTO (Pas di Tengah Layar Viewport) ===== -->
+  <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Pratinjau Foto Galeri">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup pratinjau"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto sebelumnya">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto berikutnya">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Pratinjau Foto Kegiatan">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <div class="lightbox-hint">
+        <span><i class="fas fa-hand-point-left"></i> Geser / klik panah untuk navigasi</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== VIDEO LIGHTBOX MODAL UNTUK MEMUTAR VIDEO DOKUMENTER (Pas di Tengah Layar Viewport) ===== -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Pemutar Video Dokumenter">
+    <div class="video-modal-container">
+      <div class="video-modal-header">
+        <h4 id="videoModalTitle"><i class="fas fa-play-circle" style="color:#a855f7;"></i> Video Dokumenter</h4>
+        <button class="video-modal-close" id="videoModalClose" aria-label="Tutup pemutar video">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="video-modal-player-wrap">
+        <video id="videoPlayer" controls playsinline preload="metadata">
+          Browser Anda tidak mendukung pemutar video HTML5.
+        </video>
+      </div>
+      <div class="video-modal-footer">
+        <span id="videoModalMeta"><i class="far fa-clock"></i> Dokumentasi RT 03/RW 01 Kramas</span>
+        <span><i class="fas fa-info-circle"></i> Tekan <kbd style="background:rgba(255,255,255,0.15); padding:2px 6px; border-radius:3px; font-size:0.75rem; color:#fff;">ESC</kbd> untuk menutup</span>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== SEARCH OVERLAY ===== -->
   <div class="search-overlay">
     <div class="search-box">
@@ -864,8 +869,8 @@
   <script src="js/navbar.js" defer></script>
   <script src="js/search-data.js" defer></script>
   <script src="js/search.js" defer></script>
-  <script src="js/gallery.js" defer></script>
-  <script src="js/video.js" defer></script>
+  <script src="js/gallery.js?v=4.1" defer></script>
+  <script src="js/video.js?v=4.1" defer></script>
   <script src="js/animations.js" defer></script>
 </body>
 
