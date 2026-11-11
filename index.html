@@ -13,13 +13,76 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" as="image" href="images/logo/regatu.png">
   <link rel="stylesheet" href="css/style.css?v=4.0">
+  <link rel="stylesheet" href="css/splash.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      .splash-screen { display: none !important; }
+      body.splash-active { overflow: auto !important; height: auto !important; }
+    </style>
+  </noscript>
 </head>
 
-<body>
+<body class="splash-active">
+
+  <!-- ===== SPLASH SCREEN ===== -->
+  <aside class="splash-screen" id="splashScreen" role="dialog" aria-modal="true" aria-label="Layar Pembuka Portal RT 03/RW 01 Kramas">
+    <div class="splash-backdrop">
+      <div class="splash-grid-pattern"></div>
+      <div class="splash-glow"></div>
+      <div class="splash-particles" aria-hidden="true">
+        <span class="splash-particle"></span>
+        <span class="splash-particle"></span>
+        <span class="splash-particle"></span>
+        <span class="splash-particle"></span>
+        <span class="splash-particle"></span>
+        <span class="splash-particle"></span>
+      </div>
+    </div>
+
+    <div class="splash-container">
+      <!-- Logo REGATU dengan Ring Animasi -->
+      <div class="splash-logo-wrapper">
+        <div class="splash-ring-outer"></div>
+        <div class="splash-ring-pulse"></div>
+        <div class="splash-logo-card">
+          <img src="images/logo/regatu.png" alt="Logo REGATU RT 03 RW 01" class="splash-logo-img">
+        </div>
+      </div>
+
+      <!-- Identitas & Tipografi Brand -->
+      <div class="splash-brand">
+        <div class="splash-badge">
+          <span class="splash-pulse-dot"></span>
+          <span>PORTAL RESMI WARGA</span>
+        </div>
+        <h1 class="splash-title">RT 03 / <span>RW 01</span></h1>
+        <p class="splash-location">KELURAHAN KRAMAS &bull; TEMBALANG</p>
+        <p class="splash-tagline"><strong>Melayani &amp; Membangun</strong> &bull; Together We Can</p>
+      </div>
+
+      <!-- Progress Bar & Status -->
+      <div class="splash-loader">
+        <div class="splash-progress-track">
+          <div class="splash-progress-fill" id="splashProgress"></div>
+        </div>
+        <div class="splash-status">
+          <span class="splash-status-text" id="splashStatusText">Memuat aset portal...</span>
+          <span class="splash-status-percentage" id="splashPercent">0%</span>
+        </div>
+      </div>
+
+      <!-- Tombol Lewati -->
+      <button type="button" class="splash-skip-btn" id="splashSkipBtn" aria-label="Lewati intro layar pembuka">
+        <span>Lewati</span>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+  </aside>
 
   <!-- Loading Bar -->
   <div class="loading-bar" id="loadingBar"></div>
@@ -31,7 +94,7 @@
     <div class="container">
       <a href="index.html" class="navbar-brand">
         <div class="logo-wrapper">
-          <img src="images/logo.jpg" alt="Logo REGATU RT 03 RW 01" class="logo">
+          <img src="images/logo/regatu.png" alt="Logo REGATU RT 03 RW 01" class="logo">
         </div>
         <div class="brand-text">
           <span class="brand-name">RT 03/RW 01 Kramas</span>
@@ -42,7 +105,7 @@
       <ul class="nav-menu" id="navMenu">
         <li class="nav-menu-header">
           <div class="drawer-brand">
-            <img src="images/logo.jpg" alt="Logo RT 03 RW 01" class="drawer-logo">
+            <img src="images/logo/regatu.png" alt="Logo RT 03 RW 01" class="drawer-logo">
             <div class="drawer-brand-text">
               <span class="drawer-title">RT 03 / RW 01 Kramas</span>
               <span class="drawer-subtitle">Portal Resmi Warga</span>
@@ -491,6 +554,7 @@
     </div>
   </div>
 
+  <script src="js/splash.js" defer></script>
   <script src="js/navbar.js" defer></script>
   <script src="js/search-data.js" defer></script>
   <script src="js/search.js" defer></script>

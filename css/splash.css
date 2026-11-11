@@ -1,0 +1,509 @@
+/* ==========================================================================
+   SPLASH SCREEN - WARGA RT 03 / RW 01 KELURAHAN KRAMAS (REGATU)
+   ========================================================================== */
+
+/* Kunci scroll saat splash aktif */
+body.splash-active {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+/* Container utama fullscreen */
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #070a12;
+  background: radial-gradient(circle at 50% 45%, #162032 0%, #0c1322 45%, #070a12 100%);
+  color: #ffffff;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform, visibility;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Transisi keluar (exit) */
+.splash-screen.splash-exit {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+/* Backdrop dekoratif & grid halus */
+.splash-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Pola grid latar belakang */
+.splash-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at 50% 45%, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(circle at 50% 45%, black 30%, transparent 75%);
+}
+
+/* Cahaya emas & hijau radial di belakang logo */
+.splash-glow {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(251, 209, 0, 0.22) 0%, rgba(16, 185, 129, 0.08) 45%, transparent 70%);
+  filter: blur(40px);
+  animation: splashAuraPulse 4s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes splashAuraPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* Partikel berkilau melayang */
+.splash-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.splash-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fbd100;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #fbd100;
+  opacity: 0;
+  animation: splashFloat 3s infinite ease-in-out;
+}
+
+.splash-particle:nth-child(1) { top: 25%; left: 30%; animation-delay: 0.2s; width: 3px; height: 3px; }
+.splash-particle:nth-child(2) { top: 35%; left: 70%; animation-delay: 0.8s; width: 5px; height: 5px; }
+.splash-particle:nth-child(3) { top: 65%; left: 25%; animation-delay: 1.4s; width: 4px; height: 4px; }
+.splash-particle:nth-child(4) { top: 75%; left: 75%; animation-delay: 0.5s; width: 3px; height: 3px; }
+.splash-particle:nth-child(5) { top: 20%; left: 55%; animation-delay: 1.1s; width: 4px; height: 4px; }
+.splash-particle:nth-child(6) { top: 80%; left: 45%; animation-delay: 1.7s; width: 5px; height: 5px; }
+
+@keyframes splashFloat {
+  0% {
+    transform: translateY(10px) scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Kontainer konten tengah */
+.splash-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  max-width: 520px;
+  width: 100%;
+}
+
+/* ===== LOGO WRAPPER & ANIMASI ===== */
+.splash-logo-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Ring orbit luar berputar */
+.splash-ring-outer {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  border: 2px dashed rgba(251, 209, 0, 0.4);
+  animation: splashSpin 16s linear infinite;
+}
+
+/* Ring orbit dalam berdenyut */
+.splash-ring-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px solid rgba(251, 209, 0, 0.6);
+  box-shadow: 0 0 20px rgba(251, 209, 0, 0.35);
+  animation: splashPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes splashSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes splashPulse {
+  0%, 100% {
+    transform: scale(0.98);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* Kartu Logo (Background putih bersih untuk logo REGATU) */
+.splash-logo-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
+  background: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 2px rgba(251, 209, 0, 0.8),
+    0 0 35px rgba(251, 209, 0, 0.4);
+  animation: splashLogoPop 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  overflow: hidden;
+}
+
+/* Efek kilap menyapu logo */
+.splash-logo-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 70%
+  );
+  transform: rotate(25deg) translateY(-100%);
+  animation: splashShine 3s infinite 1s ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes splashShine {
+  0% {
+    transform: rotate(25deg) translateY(-120%);
+  }
+  30%, 100% {
+    transform: rotate(25deg) translateY(120%);
+  }
+}
+
+@keyframes splashLogoPop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Gambar Logo REGATU */
+.splash-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ===== TIPOGRAFI & IDENTITAS ===== */
+.splash-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: splashTextFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+@keyframes splashTextFade {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badge status atas */
+.splash-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 14px;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #fbd100;
+  background: rgba(251, 209, 0, 0.1);
+  border: 1px solid rgba(251, 209, 0, 0.35);
+  border-radius: 100px;
+  margin-bottom: 4px;
+}
+
+/* Titik hijau berkedip di badge */
+.splash-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: splashDotPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes splashDotPulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Judul Utama */
+.splash-title {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.splash-title span {
+  color: #fbd100;
+  position: relative;
+}
+
+/* Lokasi wilayah */
+.splash-location {
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Tagline */
+.splash-tagline {
+  font-family: var(--font-body, 'Roboto', sans-serif);
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin: 4px 0 0;
+}
+
+.splash-tagline strong {
+  color: #fbd100;
+  font-weight: 500;
+}
+
+/* ===== PROGRESS BAR & LOADER ===== */
+.splash-loader {
+  width: 100%;
+  max-width: 280px;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: splashTextFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+}
+
+/* Track progress bar */
+.splash-progress-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 99px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Isi progress bar yang bergerak */
+.splash-progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #fbd100 0%, #10b981 50%, #fbd100 100%);
+  background-size: 200% 100%;
+  animation: splashGradientShift 2s linear infinite;
+  box-shadow: 0 0 12px rgba(251, 209, 0, 0.7);
+  transition: width 0.15s ease-out;
+}
+
+@keyframes splashGradientShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Baris teks status & persentase */
+.splash-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.78rem;
+  color: #94a3b8;
+  padding: 0 2px;
+}
+
+.splash-status-text {
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+.splash-status-percentage {
+  font-weight: 600;
+  color: #fbd100;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== TOMBOL LEWATI (SKIP) ===== */
+.splash-skip-btn {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #94a3b8;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: splashTextFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.splash-skip-btn:hover {
+  background: rgba(251, 209, 0, 0.14);
+  border-color: #fbd100;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(251, 209, 0, 0.25);
+}
+
+.splash-skip-btn:focus-visible {
+  outline: 2px solid #fbd100;
+  outline-offset: 2px;
+}
+
+.splash-skip-btn i {
+  font-size: 0.68rem;
+  transition: transform 0.2s ease;
+}
+
+.splash-skip-btn:hover i {
+  transform: translateX(2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .splash-logo-wrapper {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 18px;
+  }
+
+  .splash-logo-card {
+    border-radius: 20px;
+    padding: 8px;
+  }
+
+  .splash-title {
+    font-size: 1.65rem;
+  }
+
+  .splash-location {
+    font-size: 0.75rem;
+  }
+
+  .splash-tagline {
+    font-size: 0.82rem;
+  }
+
+  .splash-loader {
+    max-width: 240px;
+    margin-top: 22px;
+  }
+
+  .splash-skip-btn {
+    margin-top: 18px;
+    font-size: 0.74rem;
+    padding: 5px 14px;
+  }
+}
+
+/* Accessibility: Hormati prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .splash-ring-outer,
+  .splash-ring-pulse,
+  .splash-glow,
+  .splash-particle,
+  .splash-logo-card::after,
+  .splash-progress-fill {
+    animation: none !important;
+  }
+
+  .splash-screen {
+    transition: opacity 0.3s ease !important;
+  }
+}
