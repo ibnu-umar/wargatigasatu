@@ -127,3 +127,4 @@
   setupSearchFilter();
   fetchLiveNews();
 })();
+
