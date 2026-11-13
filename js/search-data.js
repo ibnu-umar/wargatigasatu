@@ -296,6 +296,68 @@ const SEARCH_DATA = [
     snippet: 'Koleksi album foto lengkap kegiatan warga, pilah sampah dawis, pentas seni budaya, lomba 17-an, dan jalan sehat.',
     keywords: 'galeri album foto gambar dokumentasi karnaval lomba jalan sehat pilah sampah seni budaya kramas',
     url: 'galeri.html'
+  },
+
+  // Berita Resmi Pemkot Semarang
+  {
+    title: 'Wali Kota Agustina Bawa Inovasi AISSA Raih Penghargaan CNN Indonesia Awards 2026',
+    category: 'Berita',
+    badgeClass: 'badge-berita',
+    icon: 'fas fa-newspaper',
+    iconBg: '#fef3c7',
+    iconColor: '#d97706',
+    date: '7 November 2026',
+    snippet: 'Inovasi pengelolaan sampah berbasis kecerdasan buatan (AI) mengantarkan Kota Semarang meraih penghargaan CNN Indonesia Awards 2026.',
+    keywords: 'berita semarang aissa ai kecerdasan buatan sampah cnn indonesia awards wali kota agustina penghargaan pemkot',
+    url: 'informasi.html#berita'
+  },
+  {
+    title: 'Sabet Dua Penghargaan GM-DTGI 2026, Wali Kota Semarang Agustina Pastikan Manfaat Digitalisasi',
+    category: 'Berita',
+    badgeClass: 'badge-berita',
+    icon: 'fas fa-newspaper',
+    iconBg: '#fef3c7',
+    iconColor: '#d97706',
+    date: '6 November 2026',
+    snippet: 'Kota Semarang meraih predikat Kota Terbaik se-Indonesia pada ajang Gadjah Mada Digital Transformation Governance Index (GM-DTGI) 2026.',
+    keywords: 'berita semarang gm-dtgi digitalisasi penghargaan kota terbaik transformasi digital pemkot ugm',
+    url: 'informasi.html#berita'
+  },
+  {
+    title: 'Wali Kota Semarang Agustina Wilujeng Tawarkan 19 Peluang Investasi kepada Dunia Usaha',
+    category: 'Berita',
+    badgeClass: 'badge-berita',
+    icon: 'fas fa-newspaper',
+    iconBg: '#fef3c7',
+    iconColor: '#d97706',
+    date: '22 Oktober 2026',
+    snippet: 'Wali Kota Semarang menawarkan 19 peluang pengembangan aset Pemkot Semarang dan BUMD pada ajang Semarang Business Forum (Sembiz) 2026.',
+    keywords: 'berita semarang sembiz investasi aset bumd bisnis semarang business forum wali kota ekonomi',
+    url: 'informasi.html#berita'
+  },
+  {
+    title: 'Pemkot Semarang Luncurkan ProQ, Permudah Monitoring Capaian ITKP dan Pengadaan',
+    category: 'Berita',
+    badgeClass: 'badge-berita',
+    icon: 'fas fa-newspaper',
+    iconBg: '#fef3c7',
+    iconColor: '#d97706',
+    date: '8 Oktober 2026',
+    snippet: 'Pemerintah Kota Semarang meluncurkan aplikasi ProQ (Procurement Quality) untuk memantau capaian Indeks Tata Kelola Pengadaan barang dan jasa.',
+    keywords: 'berita semarang proq pengadaan itkp barang jasa sistem aplikasi pemkot transparansi',
+    url: 'informasi.html#berita'
+  },
+  {
+    title: 'Penanganan Dampak Asap dan Titik Panas TPA Jatibarang oleh Pemkot Semarang',
+    category: 'Berita',
+    badgeClass: 'badge-berita',
+    icon: 'fas fa-newspaper',
+    iconBg: '#fef3c7',
+    iconColor: '#d97706',
+    date: '7 Oktober 2026',
+    snippet: 'Wali Kota Semarang memimpin langsung penyiraman jalan dan injeksi air guna menekan dampak asap serta memadamkan titik panas TPA Jatibarang.',
+    keywords: 'berita semarang tpa jatibarang kebakaran sampah injeksi air lingkungan pemkot damkar',
+    url: 'informasi.html#berita'
   }
 ];
 

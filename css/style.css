@@ -1337,6 +1337,88 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(4px);
 }
 
+/* ===== BERITA SEMARANG SECTION STYLES ===== */
+.berita-card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.berita-card .card-body .berita-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.berita-card:hover .berita-readmore {
+  color: var(--accent-dark);
+  transform: translateX(4px);
+}
+
+.berita-filter-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.berita-search-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 99px;
+  padding: 6px 16px;
+  flex: 1;
+  max-width: 380px;
+  transition: var(--transition);
+}
+
+.berita-search-input:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(251, 209, 0, 0.25);
+}
+
+.berita-search-input input {
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  width: 100%;
+  font-family: inherit;
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.badge-pemkot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  background: var(--accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* ===== TABS SECTION ===== */
 .tabs-section {
   background: var(--bg-light);

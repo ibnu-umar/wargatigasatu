@@ -66,6 +66,14 @@
               </div>
               <i class="fas fa-arrow-right dropdown-arrow"></i>
             </a>
+            <a href="informasi.html#berita">
+              <div class="dropdown-icon"><i class="fas fa-newspaper"></i></div>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Berita Kota Semarang</span>
+                <span class="dropdown-desc">Kabar &amp; rilis resmi Pemkot Semarang</span>
+              </div>
+              <i class="fas fa-arrow-right dropdown-arrow"></i>
+            </a>
             <a href="informasi.html#pengumuman">
               <div class="dropdown-icon"><i class="fas fa-bullhorn"></i></div>
               <div class="dropdown-text">
@@ -153,6 +161,239 @@
     <div class="glass-ambient-decor shape-3"></div>
 
     <div class="container" style="position:relative; z-index:1;">
+
+      <!-- Section Berita Terkini Kota Semarang -->
+      <section class="glass-card content-card" id="berita" style="margin-bottom: 30px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span class="badge-pemkot"><i class="fas fa-city"></i> Pemkot Semarang</span>
+              <span style="font-size:0.8rem; color:var(--text-light);"><i class="fas fa-check-circle" style="color:var(--secondary);"></i> Sumber Resmi: semarangkota.go.id</span>
+            </div>
+            <h2 style="font-family: var(--font-primary); font-size: 1.5rem; color: var(--text-dark); margin: 0;">
+              Berita &amp; Informasi Kota Semarang
+            </h2>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 4px; margin-bottom: 0;">
+              Kabar terkini seputar pembangunan, prestasi, inovasi pelayanan publik, dan kebijakan Pemerintah Kota Semarang.
+            </p>
+          </div>
+          <a href="https://www.semarangkota.go.id/id/news" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:0.85rem; padding:8px 18px; border-radius:30px; display:inline-flex; align-items:center; gap:8px;">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Buka semarangkota.go.id</span>
+          </a>
+        </div>
+
+        <!-- Filter & Search Bar Berita -->
+        <div class="berita-filter-bar">
+          <div class="berita-search-input">
+            <i class="fas fa-search" style="color:var(--text-light); font-size:0.85rem;"></i>
+            <input type="text" id="beritaSearchInput" placeholder="Cari judul berita atau topik..." aria-label="Cari berita">
+          </div>
+          <div style="display:flex; gap:8px; align-items:center; font-size:0.85rem; color:var(--text-body);">
+            <span style="color:var(--text-light);">Menampilkan:</span>
+            <span id="beritaCountBadge" style="font-weight:700; color:var(--primary); background:rgba(251,209,0,0.2); padding:2px 10px; border-radius:12px;">9 Berita</span>
+          </div>
+        </div>
+
+        <!-- Berita Grid -->
+        <div class="berita-grid" id="semarangBeritaGrid">
+          <!-- Card 1 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/pengumuman-hasil-seleksi-akhir-calon-direktur-teknik-perumda-air-minum-tirta-moedal-kota-semarang-tahun-2026" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Pengumuman Hasil Seleksi Akhir Calon Direktur Teknik Perumda Air Minum Tirta Moedal Kota Semarang Tahun 2026">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2FBySzGt9mObX0sytwOeY7fdbRWTTiFncuk7ZjZyC4.png" alt="Pengumuman Hasil Seleksi Akhir Calon Direktur Teknik Perumda Air Minum Tirta Moedal Kota Semarang Tahun 2026" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Senin, 9 November 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Pengumuman Hasil Seleksi Akhir Calon Direktur Teknik Perumda Air Minum Tirta Moedal Kota Semarang Tahun 2026</h3>
+                <p>Pengumuman Hasil Seleksi Akhir Calon Direktur Teknik Perumda Air Minum Tirta Moedal Kota Semarang Tahun 2026 oleh Panitia Seleksi Pemkot Semarang.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/wali-kota-agustina-bawa-inovasi-aissa-raih-penghargaan-cnn-indonesia-awards-2026" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Wali Kota Agustina Bawa Inovasi AISSA Raih Penghargaan CNN Indonesia Awards 2026">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2FdFwmmTbEr3LgpUfIbj99iNaWYOKdxvZ4ZPaSv3Yi.jpg" alt="Wali Kota Agustina Bawa Inovasi AISSA Raih Penghargaan CNN Indonesia Awards 2026" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Sabtu, 7 November 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Wali Kota Agustina Bawa Inovasi AISSA Raih Penghargaan CNN Indonesia Awards 2026</h3>
+                <p>Inovasi pengelolaan sampah berbasis kecerdasan buatan atau Artificial Intelligence (AI) mengantarkan Kota Semarang meraih penghargaan dalam CNN Indonesia Awards 2026.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/sabet-dua-penghargaan-gm-dtgi-2026-wali-kota-semarang-agustina-pastikan-manfaat-digitalisasi" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Sabet Dua Penghargaan GM-DTGI 2026, Wali Kota Semarang Agustina Pastikan Manfaat Digitalisasi">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2FRNRMn7a6FCFhZnmsoaHMI9g52EVamkoJR4QI3la0.jpg" alt="Sabet Dua Penghargaan GM-DTGI 2026, Wali Kota Semarang Agustina Pastikan Manfaat Digitalisasi" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Jumat, 6 November 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Sabet Dua Penghargaan GM-DTGI 2026, Wali Kota Semarang Agustina Pastikan Manfaat Digitalisasi</h3>
+                <p>Kota Semarang meraih dua predikat bergengsi sebagai Kota Terbaik se-Indonesia dan Kota Terbaik dalam Provinsi pada ajang Gadjah Mada Digital Transformation Governance Index 2026.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/wali-kota-semarang-agustina-wilujeng-tawarkan-19-peluang-investasi-kepada-dunia-usaha" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Wali Kota Semarang Agustina Wilujeng Tawarkan 19 Peluang Investasi kepada Dunia Usaha">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2FkoeYL4zuGxdvd4zbl6pZ6ZMYSXR6Bluv6p20O5OB.jpg" alt="Wali Kota Semarang Agustina Wilujeng Tawarkan 19 Peluang Investasi kepada Dunia Usaha" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Kamis, 22 Oktober 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Wali Kota Semarang Agustina Wilujeng Tawarkan 19 Peluang Investasi kepada Dunia Usaha</h3>
+                <p>Wali Kota Semarang Agustina Wilujeng menawarkan 19 peluang pengembangan aset Pemerintah Kota Semarang dan BUMD kepada dunia usaha pada ajang Sembiz 2026.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/pemkot-semarang-luncurkan-proq-permudah-monitoring-capaian-itkp-dan-pengadaan-barangjasa" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Pemkot Semarang Luncurkan ProQ, Permudah Monitoring Capaian ITKP dan Pengadaan Barang/Jasa">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2F2YMXvBYCRUe01vf3gDYeCDTga4LTnbo5AvD7WPzQ.jpg" alt="Pemkot Semarang Luncurkan ProQ, Permudah Monitoring Capaian ITKP dan Pengadaan Barang/Jasa" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Kamis, 8 Oktober 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Pemkot Semarang Luncurkan ProQ, Permudah Monitoring Capaian ITKP dan Pengadaan Barang/Jasa</h3>
+                <p>Pemerintah Kota Semarang meluncurkan aplikasi ProQ (Procurement Quality) untuk memantau capaian Indeks Tata Kelola Pengadaan dan barang/jasa pemerintah.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/business-matching-i-2026-pemkot-semarang-dorong-transformasi-pengadaan-melalui-itkp-spse-v5-dan-katalog-elektronik" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Business Matching I 2026, Pemkot Semarang Dorong Transformasi Pengadaan">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2FzH1p2r0KxUzRy49qCBu2SRjx3ypW9wiOUfTxcoW3.jpg" alt="Business Matching I 2026, Pemkot Semarang Dorong Transformasi Pengadaan" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Kamis, 8 Oktober 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Business Matching I 2026, Pemkot Semarang Dorong Transformasi Pengadaan melalui ITKP, SPSE v5, dan Katalog Elektronik</h3>
+                <p>Pemkot Semarang menyelenggarakan Business Matching I Tahun 2026 guna memperkuat belanja produk dalam negeri dan transparansi pengadaan.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/wali-kota-semarang-agustina-pimpin-penyiraman-jalan-tekan-dampak-asap-tpa-jatibarang" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Wali Kota Semarang Agustina Pimpin Penyiraman Jalan, Tekan Dampak Asap TPA Jatibarang">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2F100lBTYDT58dl7QS93w9APXKEpULVlZpzM5pDnz3.jpg" alt="Wali Kota Semarang Agustina Pimpin Penyiraman Jalan, Tekan Dampak Asap TPA Jatibarang" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Rabu, 7 Oktober 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Wali Kota Semarang Agustina Pimpin Penyiraman Jalan, Tekan Dampak Asap TPA Jatibarang</h3>
+                <p>Wali Kota Semarang Agustina Wilujeng memimpin langsung penanganan dampak kebakaran TPA Jatibarang serta penyiraman jalan secara intensif.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/titik-panas-tpa-jatibarang-tersisa-7-persen-wali-kota-semarang-agustina-optimalkan-injeksi-air" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Titik Panas TPA Jatibarang Tersisa 7 Persen, Wali Kota Semarang Agustina Optimalkan Injeksi Air">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2FQ4ccDPsXtvEK2K7dFmWXJuMMdrIRv1Ro6i3RjU22.jpg" alt="Titik Panas TPA Jatibarang Tersisa 7 Persen, Wali Kota Semarang Agustina Optimalkan Injeksi Air" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Selasa, 6 Oktober 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Titik Panas TPA Jatibarang Tersisa 7 Persen, Wali Kota Semarang Agustina Optimalkan Injeksi Air</h3>
+                <p>Wali Kota Semarang Agustina Wilujeng mengoptimalkan metode injeksi air untuk memastikan bara api di bagian bawah timbunan sampah padam total.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="berita-card">
+            <a href="https://www.semarangkota.go.id/id/news/wali-kota-semarang-agustina-memberi-hadiah-umroh-untuk-7-orang-kafilah-juara-mtq-nasional-xxxi" target="_blank" rel="noopener noreferrer" class="berita-card-link" title="Wali Kota Semarang Agustina Memberi Hadiah Umroh untuk 7 Orang Kafilah Juara MTQ Nasional XXXI">
+              <div class="card-image">
+                <img src="https://cms.semarangkota.go.id/admin/getfile?url=semarangkota%2Fpublication%2F2ZbZArJHuXGLQdHhOiUT7Q1dX0hzZDPsjapQNrMr.jpg" alt="Wali Kota Semarang Agustina Memberi Hadiah Umroh untuk 7 Orang Kafilah Juara MTQ Nasional XXXI" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpg';">
+              </div>
+              <div class="card-meta">
+                <span class="category"><i class="fas fa-tag"></i> Berita</span>
+                <span><i class="far fa-calendar-alt"></i> Rabu, 23 September 2026</span>
+              </div>
+              <div class="card-body">
+                <h3>Wali Kota Semarang Agustina Memberi Hadiah Umroh untuk 7 Orang Kafilah Juara MTQ Nasional XXXI</h3>
+                <p>Wali Kota Semarang Agustina Wilujeng memberikan penghargaan berupa hadiah umroh kepada para kafilah berprestasi asal Kota Semarang di ajang MTQ Nasional.</p>
+                <span class="berita-readmore">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tombol Kunjungi Portal -->
+        <div style="text-align:center; margin-top:32px;">
+          <a href="https://www.semarangkota.go.id/id/news" target="_blank" rel="noopener noreferrer" class="btn-selengkapnya" style="border-radius:30px; padding:10px 24px; font-weight:600;">
+            <i class="fas fa-newspaper" style="margin-right:6px;"></i> Lihat Seluruh Berita Resmi di semarangkota.go.id
+          </a>
+        </div>
+      </section>
 
       <!-- Section Pengumuman -->
       <section class="glass-card content-card" id="pengumuman">
@@ -263,6 +504,7 @@
     </div>
   </div>
 
+  <script src="js/berita-semarang.js" defer></script>
   <script src="js/navbar.js" defer></script>
   <script src="js/search-data.js" defer></script>
   <script src="js/search.js" defer></script>
